@@ -275,178 +275,128 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
 </div>
 </div>
 <div
+  style={{
+    width: '100%',
+    padding: '96px 24px',
+    background: '#09090B',
+    overflow: 'hidden',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '64px',
+  }}
+>
+  <div
+    style={{
+      width: '100%',
+      maxWidth: '1280px',
+      display: 'flex',
+      flexDirection: window.innerWidth < 1024 ? 'column' : 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 48,
+    }}
+  >
+    {/* Text + Cards */}
+    <div
       style={{
-        width: '100%',
-        padding: '96px 80px',
-        background: '#09090B',
-        overflow: 'hidden',
+        flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        gap: '64px',
+        gap: 32,
+        zIndex: 2,
       }}
     >
-      {/* Text Section */}
-      <div
-        style={{
-          width: '100%',
-          maxWidth: '1280px',
-          padding: '0 24px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '32px',
-          position: 'relative',
-        }}
-      >
+      {/* Text */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         <div
           style={{
-            position: 'absolute',
-            left: '418px',
-            top: '100px',
-            width: '1300px',
-            height: '439px',
-            background:
-              'linear-gradient(87deg, rgba(150,150,150,0.5), rgba(86,86,86,0.5), rgba(228,228,228,0.5))',
-            boxShadow: '300px 300px 300px rgba(0,0,0,0.3)',
-            borderRadius: '9999px',
-            filter: 'blur(150px)',
-            zIndex: 0,
-          }}
-        />
-        <div
-          style={{
-            zIndex: 1,
-            maxWidth: '576px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '20px',
+            color: '#2563EB',
+            fontSize: 14,
+            fontWeight: 600,
+            fontFamily: 'Inter',
           }}
         >
-          <div
-            style={{
-              color: '#2563EB',
-              fontSize: 16,
-              fontWeight: 600,
-              fontFamily: 'Inter',
-            }}
-          >
-            Compatibility
-          </div>
-          <div
-            style={{
-              color: '#FAFAFA',
-              fontSize: 36,
-              fontWeight: 700,
-              fontFamily: 'Inter',
-              lineHeight: '40px',
-            }}
-          >
-            Compatible with the most widely used trading platforms
-          </div>
-          <div
-            style={{
-              color: '#A1A1AA',
-              fontSize: 16,
-              fontWeight: 400,
-              fontFamily: 'Inter',
-              lineHeight: '24px',
-            }}
-          >
-            Our systems are ready to operate on:
-          </div>
+          Compatibility
+        </div>
+        <div
+          style={{
+            color: '#FAFAFA',
+            fontSize: window.innerWidth < 768 ? 24 : 36,
+            fontWeight: 700,
+            fontFamily: 'Inter',
+            lineHeight: '1.2',
+          }}
+        >
+          Compatible with the most widely used trading platforms
+        </div>
+        <div
+          style={{
+            color: '#A1A1AA',
+            fontSize: 16,
+            fontWeight: 400,
+            fontFamily: 'Inter',
+            lineHeight: '24px',
+          }}
+        >
+          Our systems are ready to operate on:
         </div>
       </div>
 
-      {/* Cards and Image */}
-      <div
-        style={{
-          width: '100%',
-          maxWidth: '1280px',
-          padding: '0 24px',
-          display: 'flex',
-          gap: '64px',
-          alignItems: 'center',
-          flexWrap: 'wrap', // Allows wrapping of content when screen size is small
-        }}
-      >
-        {/* Cards */}
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
-          {[{ name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
-            { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
-            { name: 'cTrader', active: false, icon: '/cTrader mark.png' }].map(({ name, active, icon }) => (
-              <div
-                key={name}
-                style={{
-                  padding: '16px 0 16px 24px',
-                  borderLeft: active ? '4px solid #2563EB' : '1px solid #27272A',
-                  borderRight: '1px solid #27272A',
-                  borderBottom: '1px solid #27272A',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '20px',
-                  background: active ? '#18181B' : 'transparent',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                  <img
-                    src={icon}
-                    alt={`${name} icon`}
-                    style={{ width: 25, height: 24 }}
-                  />
-                  <div
-                    style={{
-                      color: '#FAFAFA',
-                      fontSize: 20,
-                      fontWeight: 500,
-                      fontFamily: 'Inter',
-                    }}
-                  >
-                    {name}
-                  </div>
-                </div>
-                <div
-                  style={{
-                    color: '#A1A1AA',
-                    fontSize: 16,
-                    fontWeight: 400,
-                    fontFamily: 'Inter',
-                  }}
-                >
-                  See how our algorithms appear directly in your MT4 terminal with
-                  real-time performance monitoring and customizable risk settings.
-                </div>
-              </div>
-          ))}
-        </div>
-
-        {/* Image */}
-        <div style={{ flex: 1, height: '512px', position: 'relative' }}>
+      {/* Cards */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        {[
+          { name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
+          { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
+          { name: 'cTrader', active: false, icon: '/cTrader mark.png' },
+        ].map(({ name, active, icon }) => (
           <div
+            key={name}
             style={{
-              width: '1024px',
-              height: '682px',
-              position: 'absolute',
-              left: '-86px',
-              top: '-46px',
-              borderRadius: '12px',
+              padding: '16px 24px',
+              border: active ? '1px solid #2563EB' : '1px solid #27272A',
+              backgroundColor: active ? '#18181B' : 'transparent',
+              borderRadius: 8,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 12,
             }}
           >
-            <img
-              src="/3_2 screen mockup.png"
-              alt="Trading platform"
-              style={{
-                width: '994px',
-                height: '682px',
-                position: 'absolute',
-                left: '30px',
-                top: '-94px',
-                borderRadius: '10px',
-              }}
-            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <img src={icon} alt={`${name} icon`} style={{ width: 24, height: 24 }} />
+              <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
+            </div>
+            <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
+              See how our algorithms appear directly in your MT4 terminal with real-time performance
+              monitoring and customizable risk settings.
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
+
+    {/* Image */}
+    <div
+      style={{
+        flex: 1,
+        position: 'relative',
+        width: '100%',
+        maxWidth: 600,
+        minWidth: 280,
+      }}
+    >
+      <img
+        src="/3_2 screen mockup.png"
+        alt="Trading platform"
+        style={{
+          width: '100%',
+          height: 'auto',
+          borderRadius: 12,
+        }}
+      />
+    </div>
+  </div>
+</div>
 </div>
 
   )
