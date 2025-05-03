@@ -110,18 +110,21 @@ justifyContent: 'center',
 {
 title: 'Algorithmic account management',
 desc: `We manage accounts on brokers or prop firms using our proprietary algorithms.\nFully automated—no action required on your part.`,
+img:"/Bot.png"
 },
 {
 title: 'High-performance exclusive algorithms',
 desc: `Audited and optimized strategies designed to operate in top-tier trading`,
+img:"/Data graph 1.png"
 },
 {
 title: 'Custom-built trading robots',
 desc: `Already have a strategy? We turn it into a functional robot (MT4, MT5 or cTrader).`,
+img:"/Bot Add.png"
 },
-].map(({ title, desc }, idx) => (
+].map(({ title, desc, img }, idx) => (
 <div key={idx} style={cardStyle}>
-<div style={{ width: 48, height: 48, backgroundColor: '#2563EB', borderRadius: 8 }} />
+<img src={img} style={{ width: 48, height: 48, borderRadius: 8 }} />
 <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
 <div
