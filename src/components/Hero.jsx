@@ -40,7 +40,7 @@ Get started
 {/* Dashboard Image */}
 <div style={{ display: "flex", justifyContent: "center", padding: "64px 24px" }}>
 <img
-src="../../public/image (2).png"
+src="/public/image (2).png"
 alt="dashboard preview"
 style={{ maxWidth: 1200, width: "100%", borderRadius: 16 }}
 />
