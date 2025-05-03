@@ -62,6 +62,50 @@ function App() {
   //     <CompatibilitySection/>
   //     <CoreServices/>
   // </div>
+      //   <div style={{ padding: "24px 5%", maxWidth: 1440, margin: "0 auto" }}>
+      //   {/* NAVBAR */}
+      //   <div style={{
+      //     display: "flex",
+      //     flexWrap: "wrap",
+      //     justifyContent: "space-between",
+      //     alignItems: "center",
+      //     gap: 16,
+      //   }}>
+      //     <img
+          
+      //   src="/White.png" // Reemplaza con la ruta de tu logo
+      //   alt="Logo"
+      //   style={{
+      //     width: '250px', // Tamaño del logo en la navbar
+      //     height: 'auto', // Mantiene la proporción
+      //   }}
+      // />
+      //     {/* <img src="/White.png" alt="" /> */}
+      //     {/* <div style={{ fontWeight: "bold", fontSize: 18, letterSpacing: 2 }}>ONLYGENIUS</div> */}
+      //     <div style={{
+      //       display: "flex",
+      //       gap: 16,
+      //       flexWrap: "wrap",
+      //       justifyContent: "center",
+      //       flexGrow: 1
+      //     }}>
+      //       {["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((item) => (
+      //         <div key={item} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer" }}>{item}</div>
+      //       ))}
+      //     </div>
+      //     <div style={{
+      //       backgroundColor: "#2563EB",
+      //       borderRadius: 6,
+      //       padding: "8px 16px",
+      //       fontSize: 14,
+      //       fontWeight: 500,
+      //       color: "white",
+      //       whiteSpace: "nowrap"
+      //     }}>
+      //       Client area
+      //     </div>
+      //   </div>
+      // </div>
   return (
     <div style={{
       background: "#09090B",
@@ -70,41 +114,26 @@ function App() {
       width: "100%",
       overflowX: "hidden"
     }}>
-      {/* Responsive wrapper */}
-      <div style={{ padding: "24px 5%", maxWidth: 1440, margin: "0 auto" }}>
-        {/* NAVBAR */}
-        <div style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: 16,
-        }}>
-          <div style={{ fontWeight: "bold", fontSize: 18, letterSpacing: 2 }}>ONLYGENIUS</div>
-          <div style={{
+      <div style={{
             display: "flex",
             gap: 16,
             flexWrap: "wrap",
             justifyContent: "center",
-            flexGrow: 1
+            flexGrow: 1,
+            marginTop: 50
           }}>
-            {["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((item) => (
-              <div key={item} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer" }}>{item}</div>
-            ))}
+            <img
+          
+          src="/White.png" // Reemplaza con la ruta de tu logo
+          alt="Logo"
+          style={{
+            width: '250px', // Tamaño del logo en la navbar
+            height: 'auto', // Mantiene la proporción
+          }}
+        />
           </div>
-          <div style={{
-            backgroundColor: "#2563EB",
-            borderRadius: 6,
-            padding: "8px 16px",
-            fontSize: 14,
-            fontWeight: 500,
-            color: "white",
-            whiteSpace: "nowrap"
-          }}>
-            Client area
-          </div>
-        </div>
-      </div>
+      {/* Responsive wrapper */}
+
       {/* HERO */}
       <div style={{ textAlign: "center", padding: "64px 5% 0", maxWidth: 1280, margin: "0 auto" }}>
         <div style={{ fontSize: 16, fontWeight: 600, color: "#2563EB" }}>Since 2012</div>
@@ -247,80 +276,80 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
 </div>
 <div
       style={{
-        width: "100%",
-        padding: "96px 80px",
-        background: "#09090B",
-        overflow: "hidden",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "64px",
+        width: '100%',
+        padding: '96px 80px',
+        background: '#09090B',
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '64px',
       }}
     >
       {/* Text Section */}
       <div
         style={{
-          width: "100%",
-          maxWidth: "1280px",
-          padding: "0 24px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "32px",
-          position: "relative",
+          width: '100%',
+          maxWidth: '1280px',
+          padding: '0 24px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '32px',
+          position: 'relative',
         }}
       >
         <div
           style={{
-            position: "absolute",
-            left: "418px",
-            top: "100px",
-            width: "1300px",
-            height: "439px",
+            position: 'absolute',
+            left: '418px',
+            top: '100px',
+            width: '1300px',
+            height: '439px',
             background:
-              "linear-gradient(87deg, rgba(150,150,150,0.5), rgba(86,86,86,0.5), rgba(228,228,228,0.5))",
-            boxShadow: "300px 300px 300px rgba(0,0,0,0.3)",
-            borderRadius: "9999px",
-            filter: "blur(150px)",
+              'linear-gradient(87deg, rgba(150,150,150,0.5), rgba(86,86,86,0.5), rgba(228,228,228,0.5))',
+            boxShadow: '300px 300px 300px rgba(0,0,0,0.3)',
+            borderRadius: '9999px',
+            filter: 'blur(150px)',
             zIndex: 0,
           }}
         />
         <div
           style={{
             zIndex: 1,
-            maxWidth: "576px",
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
+            maxWidth: '576px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
           }}
         >
           <div
             style={{
-              color: "#2563EB",
+              color: '#2563EB',
               fontSize: 16,
               fontWeight: 600,
-              fontFamily: "Inter",
+              fontFamily: 'Inter',
             }}
           >
             Compatibility
           </div>
           <div
             style={{
-              color: "#FAFAFA",
+              color: '#FAFAFA',
               fontSize: 36,
               fontWeight: 700,
-              fontFamily: "Inter",
-              lineHeight: "40px",
+              fontFamily: 'Inter',
+              lineHeight: '40px',
             }}
           >
             Compatible with the most widely used trading platforms
           </div>
           <div
             style={{
-              color: "#A1A1AA",
+              color: '#A1A1AA',
               fontSize: 16,
               fontWeight: 400,
-              fontFamily: "Inter",
-              lineHeight: "24px",
+              fontFamily: 'Inter',
+              lineHeight: '24px',
             }}
           >
             Our systems are ready to operate on:
@@ -331,100 +360,87 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
       {/* Cards and Image */}
       <div
         style={{
-          width: "100%",
-          maxWidth: "1280px",
-          padding: "0 24px",
-          display: "flex",
-          gap: "64px",
-          alignItems: "center",
+          width: '100%',
+          maxWidth: '1280px',
+          padding: '0 24px',
+          display: 'flex',
+          gap: '64px',
+          alignItems: 'center',
+          flexWrap: 'wrap', // Allows wrapping of content when screen size is small
         }}
       >
         {/* Cards */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-          {[
-            {
-              name: "MetaTrader 4",
-              active: false,
-              icon: "/MT4 Logo mark.png",
-            },
-            {
-              name: "MetaTrader 5",
-              active: true,
-              icon: "/MT5 Logo mark.png",
-            },
-            {
-              name: "cTrader",
-              active: false,
-              icon: "/cTrader mark.png",
-            },
-          ].map(({ name, active, icon }) => (
-            <div
-              key={name}
-              style={{
-                padding: "16px 0 16px 24px",
-                borderLeft: active ? "4px solid #2563EB" : "1px solid #27272A",
-                borderRight: "1px solid #27272A",
-                borderBottom: "1px solid #27272A",
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-                background: active ? "#18181B" : "transparent",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-                <img
-                  src={icon}
-                  alt={`${name} icon`}
-                  style={{ width: 25, height: 24 }}
-                />
-                <div
-                  style={{
-                    color: "#FAFAFA",
-                    fontSize: 20,
-                    fontWeight: 500,
-                    fontFamily: "Inter",
-                  }}
-                >
-                  {name}
-                </div>
-              </div>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
+          {[{ name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
+            { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
+            { name: 'cTrader', active: false, icon: '/cTrader mark.png' }].map(({ name, active, icon }) => (
               <div
+                key={name}
                 style={{
-                  color: "#A1A1AA",
-                  fontSize: 16,
-                  fontWeight: 400,
-                  fontFamily: "Inter",
+                  padding: '16px 0 16px 24px',
+                  borderLeft: active ? '4px solid #2563EB' : '1px solid #27272A',
+                  borderRight: '1px solid #27272A',
+                  borderBottom: '1px solid #27272A',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '20px',
+                  background: active ? '#18181B' : 'transparent',
                 }}
               >
-                See how our algorithms appear directly in your MT4 terminal with
-                real-time performance monitoring and customizable risk settings.
+                <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                  <img
+                    src={icon}
+                    alt={`${name} icon`}
+                    style={{ width: 25, height: 24 }}
+                  />
+                  <div
+                    style={{
+                      color: '#FAFAFA',
+                      fontSize: 20,
+                      fontWeight: 500,
+                      fontFamily: 'Inter',
+                    }}
+                  >
+                    {name}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    color: '#A1A1AA',
+                    fontSize: 16,
+                    fontWeight: 400,
+                    fontFamily: 'Inter',
+                  }}
+                >
+                  See how our algorithms appear directly in your MT4 terminal with
+                  real-time performance monitoring and customizable risk settings.
+                </div>
               </div>
-            </div>
           ))}
         </div>
 
         {/* Image */}
-        <div style={{ flex: 1, height: "512px", position: "relative" }}>
+        <div style={{ flex: 1, height: '512px', position: 'relative' }}>
           <div
             style={{
-              width: "1024px",
-              height: "682px",
-              position: "absolute",
-              left: "-86px",
-              top: "-46px",
-              borderRadius: "12px",
+              width: '1024px',
+              height: '682px',
+              position: 'absolute',
+              left: '-86px',
+              top: '-46px',
+              borderRadius: '12px',
             }}
           >
             <img
               src="/3_2 screen mockup.png"
               alt="Trading platform"
               style={{
-                width: "994px",
-                height: "682px",
-                position: "absolute",
-                left: "30px",
-                top: "-94px",
-                borderRadius: "10px",
+                width: '994px',
+                height: '682px',
+                position: 'absolute',
+                left: '30px',
+                top: '-94px',
+                borderRadius: '10px',
               }}
             />
           </div>

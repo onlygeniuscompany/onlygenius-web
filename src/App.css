@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width: 768px) {
+  /* Adjust the gap, padding, or font size for small devices */
+  .card-container {
+    gap: 16px;
+  }
+  .text-container {
+    font-size: 14px;
+  }
+}
