@@ -145,36 +145,37 @@ style={{ maxWidth: 1200, width: "100%", borderRadius: 16 }}
 />
 </div>
 <div
-style={{
-width: '100%',
-padding: '96px 80px',
-backgroundColor: '#09090B',
-display: 'flex',
-flexDirection: 'column',
-alignItems: 'center',
-gap: 24,
-}}
+  style={{
+    width: '95%',
+    padding: '96px 24px',
+    backgroundColor: '#09090B',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: 24,
+  }}
 >
-<div
-style={{
-width: '100%',
-maxWidth: 1280,
-padding: '0 24px',
-display: 'flex',
-flexDirection: 'column',
-alignItems: 'center',
-gap: 64,
-}}
->
-<div
-style={{
-maxWidth: 576,
-display: 'flex',
-flexDirection: 'column',
-alignItems: 'center',
-gap: 20,
-}}
->
+  <div
+    style={{
+      width: '100%',
+      maxWidth: 1280,
+      padding: '0 16px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 64,
+    }}
+  >
+    <div
+      style={{
+        maxWidth: 576,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 20,
+        textAlign: 'center',
+      }}
+    >
 <div style={heading}>Core Services</div>
 <div style={title}>
 Fully automated account management. No hassle.
