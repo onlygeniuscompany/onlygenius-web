@@ -107,12 +107,12 @@ const CompatibilitySection = () => {
             {
               name: "MetaTrader 5",
               active: true,
-              icon: "/public/MT5 Logo mark.png",
+              icon: "/MT5 Logo mark.png",
             },
             {
               name: "cTrader",
               active: false,
-              icon: "/public/cTrader mark.png",
+              icon: "/cTrader mark.png",
             },
           ].map(({ name, active, icon }) => (
             <div
@@ -173,7 +173,7 @@ const CompatibilitySection = () => {
             }}
           >
             <img
-              src="/public/3_2 screen mockup.png"
+              src="/3_2 screen mockup.png"
               alt="Trading platform"
               style={{
                 width: "994px",
