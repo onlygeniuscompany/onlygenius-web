@@ -1,31 +1,22 @@
-// components/Navbar.tsx
-export default function Navbar() {
-    return (
-      <header className="w-full py-4 flex justify-center bg-black">
-        <div className="w-full max-w-7xl px-6 flex justify-between items-center">
-          {/* Logo */}
-          <div className="w-[267px] h-4 bg-white" />
-  
-          {/* Navigation */}
-          <nav className="flex gap-2 items-center text-sm font-medium text-white">
-            {["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((label) => (
-              <button
-                key={label}
-                className="px-4 py-2 rounded-md hover:bg-white/10 transition-colors"
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-  
-          {/* Call to Action */}
-          <div>
-            <button className="px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition-colors">
-              Client area
-            </button>
-          </div>
-        </div>
-      </header>
-    )
-  }
-  
+import React from "react";
+
+export default function NavBar() {
+  return (
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 80px", maxWidth: 1440, margin: "0 auto" }}>
+<div style={{ fontWeight: "bold", fontSize: 18, letterSpacing: 2 }}>ONLYGENIUS</div>
+<div style={{ display: "flex", gap: 24 }}>
+{["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((item) => (
+<div
+key={item}
+style={{ fontSize: 14, fontWeight: 500, color: "#FAFAFA", cursor: "pointer" }}
+>
+{item}
+</div>
+))}
+</div>
+<div style={{ backgroundColor: "#2563EB", borderRadius: 6, padding: "8px 16px", fontSize: 14, fontWeight: 500, color: "white", cursor: "pointer" }}>
+Client area
+</div>
+</div>
+  );
+}
