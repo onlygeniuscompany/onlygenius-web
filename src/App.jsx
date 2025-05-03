@@ -22,7 +22,7 @@ function App() {
     textAlign: 'center',
     color: '#2563EB',
     fontSize: 16,
-    fontFamily: 'Inter',
+    fontFamily: 'Inter, sans-serif',
     fontWeight: 600,
     lineHeight: '24px',
     };
@@ -32,7 +32,7 @@ function App() {
     textAlign: 'center',
     color: '#FAFAFA',
     fontSize: 36,
-    fontFamily: 'Inter',
+    fontFamily: 'Inter, sans-serif',
     fontWeight: 700,
     lineHeight: '40px',
     };
@@ -42,7 +42,7 @@ function App() {
     textAlign: 'center',
     color: '#A1A1AA',
     fontSize: 16,
-    fontFamily: 'Inter',
+    fontFamily: 'Inter, sans-serif',
     fontWeight: 400,
     lineHeight: '24px',
     };
@@ -134,44 +134,100 @@ function App() {
           </div>
       {/* Responsive wrapper */}
 
-      {/* HERO */}
-      <div style={{ textAlign: "center", padding: "64px 5% 0", maxWidth: 1280, margin: "0 auto" }}>
-        <div style={{ fontSize: 16, fontWeight: 600, color: "#2563EB" }}>Since 2012</div>
-        <h1 style={{ fontSize: 32, fontWeight: 700, lineHeight: "40px", margin: "24px 0" }}>
-          Your gateway to <span style={{ color: "#2563EB" }}>algorithmic</span> capital management
-        </h1>
-        <p style={{ fontSize: 16, color: "#A1A1AA", maxWidth: 672, margin: "0 auto 32px" }}>
-          Professional technology for traders, companies, and long-term capital strategies.
-        </p>
-        <div style={{
-          backgroundColor: "#2563EB",
-          borderRadius: 6,
-          padding: "8px 16px",
-          fontSize: 14,
-          fontWeight: 500,
-          color: "white",
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 8,
-          cursor: "pointer"
-        }}>
-          Get started
-          <div style={{
-            width: 12,
-            height: 12,
-            borderTop: "2px solid white",
-            borderRight: "2px solid white",
-            transform: "rotate(45deg)"
-          }}></div>
-        </div>
-      </div>
-{/* Dashboard Image */}
-<div style={{ display: "flex", justifyContent: "center", padding: "64px 24px" }}>
-<img
-src="/image (2).png"
-alt="dashboard preview"
-style={{ maxWidth: 1200, width: "100%", borderRadius: 16 }}
-/>
+      <div
+  style={{
+    position: 'relative',
+    textAlign: 'center',
+    padding: '64px 5% 0',
+    maxWidth: 1280,
+    margin: '0 auto',
+    fontFamily: 'Inter, sans-serif',
+    overflow: 'hidden',
+  }}
+>
+  {/* Texto */}
+  <div style={{ fontSize: 16, fontWeight: 600, color: '#2563EB' }}>Since 2012</div>
+
+  <h1
+    style={{
+      fontSize: window.innerWidth < 768 ? 28 : 48,
+      fontWeight: 700,
+      lineHeight: '56px',
+      margin: '24px 0',
+      color: '#FAFAFA',
+    }}
+  >
+    Your gateway to <span style={{ color: '#2563EB' }}>algorithmic</span> capital management
+  </h1>
+
+  <p
+    style={{
+      fontSize: 16,
+      color: '#A1A1AA',
+      maxWidth: 672,
+      margin: '0 auto 32px',
+    }}
+  >
+    Professional technology for traders, companies, and long-term capital strategies.
+  </p>
+
+  {/* Imagen del mundo detrás del botón */}
+  <div
+    style={{
+      position: 'relative',
+      display: 'inline-block',
+    }}
+  >
+    {/* <img
+      src="/Global Ball 1.png" // ⬅️ asegurate de cambiarlo si el nombre es distinto
+      alt="Globe background"
+      style={{
+        width: 280,
+        position: 'absolute',
+        top: -90,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: -1,
+        opacity: 0.3,
+      }}
+    /> */}
+    <div
+      style={{
+        backgroundColor: '#2563EB',
+        borderRadius: 6,
+        padding: '8px 16px',
+        fontSize: 14,
+        fontWeight: 500,
+        color: 'white',
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 8,
+        cursor: 'pointer',
+        zIndex: 2,
+        position: 'relative',
+      }}
+    >
+      Get started
+      <div
+        style={{
+          width: 12,
+          height: 12,
+          borderTop: '2px solid white',
+          borderRight: '2px solid white',
+          transform: 'rotate(45deg)',
+        }}
+      ></div>
+    </div>
+  </div>
+</div>
+
+{/* Imagen del dashboard */}
+<div style={{ display: 'flex', justifyContent: 'center', padding: '64px 24px' }}>
+  <img
+    src="/image (2).png"
+    alt="dashboard preview"
+    style={{ maxWidth: 1200, width: '100%', borderRadius: 16 }}
+  />
 </div>
 <div
   style={{
@@ -181,6 +237,7 @@ style={{ maxWidth: 1200, width: "100%", borderRadius: 16 }}
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    fontFamily: 'Inter, sans-serif',
     gap: 24,
   }}
 >
@@ -282,6 +339,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',
+    fontFamily: 'Inter, sans-serif',
     alignItems: 'center',
     gap: '64px',
   }}
@@ -314,7 +372,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             color: '#2563EB',
             fontSize: 14,
             fontWeight: 600,
-            fontFamily: 'Inter',
+            fontFamily: 'Inter, sans-serif',
           }}
         >
           Compatibility
@@ -324,7 +382,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             color: '#FAFAFA',
             fontSize: window.innerWidth < 768 ? 24 : 36,
             fontWeight: 700,
-            fontFamily: 'Inter',
+            fontFamily: 'Inter, sans-serif',
             lineHeight: '1.2',
           }}
         >
@@ -335,7 +393,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             color: '#A1A1AA',
             fontSize: 16,
             fontWeight: 400,
-            fontFamily: 'Inter',
+            fontFamily: 'Inter, sans-serif',
             lineHeight: '24px',
           }}
         >
