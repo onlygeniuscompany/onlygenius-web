@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+// import Navbar from "./components/Navbar"
 import CompatibilitySection from "./components/CompatibilitySection"
 import Hero from "./components/Hero"
 function App() {
