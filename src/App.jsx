@@ -3,6 +3,48 @@ import CompatibilitySection from "./components/CompatibilitySection"
 import Hero from "./components/Hero"
 import CoreServices from "./components/CoreServices"
 function App() {
+  const rows = [
+    {
+      feature: "Distribución de ganancias para traders financiados",
+      onlyGenius: <span style={{ color: "#22C55E" }}>Hasta el 80%</span>,
+      others: "50–60%",
+    },
+    {
+      feature: "Historial auditado",
+      onlyGenius: "✔️",
+      others: "❌",
+    },
+    {
+      feature: "Totalmente automatizado (sin intervención manual)",
+      onlyGenius: "✔️",
+      others: "Limitado",
+    },
+    {
+      feature: "Paneles avanzados en tiempo real",
+      onlyGenius: "✔️",
+      others: "Básico",
+    },
+    {
+      feature: "Soporte experto personalizado",
+      onlyGenius: "✔️",
+      others: "Soporte genérico",
+    },
+    {
+      feature: "Compatible con múltiples tipos de cuenta",
+      onlyGenius: <span style={{ color: "#22C55E" }}>Brokers, Prop Firms, Institucionales</span>,
+      others: "Opciones limitadas",
+    },
+    {
+      feature: "Bots de trading personalizados",
+      onlyGenius: "✔️",
+      others: "❌",
+    },
+    {
+      feature: "Experiencia en gestión de capital",
+      onlyGenius: <span style={{ color: "#22C55E" }}>Propio y de terceros</span>,
+      others: "Experiencia limitada",
+    },
+  ];
   const learnMore = {
     color: '#2563EB',
     fontSize: 14,
@@ -124,6 +166,7 @@ function App() {
               color: "white",
               cursor: "pointer",
             }}
+            onClick={"https://calendly.com/onlygenius-support/30min"}
           >
             Empezar
             <div
@@ -186,7 +229,7 @@ function App() {
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   <div style={{ fontSize: 20, fontWeight: 500 }}>{title}</div>
                   <div style={{ color: "#A1A1AA", fontSize: 16 }}>{desc}</div>
-                  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 500, cursor: "pointer" }}>
+                  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 500, cursor: "pointer" }} onClick={"https://calendly.com/onlygenius-support/30min"}>
                     Saber más →
                   </div>
                 </div>
@@ -332,6 +375,158 @@ function App() {
           </div>
         </div>
       </div>
+      <div
+      style={{
+        backgroundColor: "#09090B",
+        padding: "96px 24px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 48,
+        fontFamily: "Inter, sans-serif",
+        color: "#FAFAFA",
+      }}
+    >
+      <div style={{ textAlign: "center", maxWidth: 800 }}>
+        <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 600 }}>
+          Trusted by
+        </div>
+        <h2
+          style={{
+            fontSize: 32,
+            fontWeight: 700,
+            margin: "16px 0",
+          }}
+        >
+         Con la confianza de empresas, traders minoristas y gestores de capital
+        </h2>
+        <p style={{ color: "#A1A1AA", fontSize: 16 }}>
+        Gestionamos cuentas tanto para particulares como para instituciones, ayudándolos a diversificar su capital mediante sistemas algorítmicos eficientes y confiables.
+        </p>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: 24,
+          width: "100%",
+          maxWidth: 1200,
+        }}
+      >
+        {[
+  {
+    title: "Capital institucional y corporativo",
+    desc: "Gestión total o parcial del capital, incluyendo control de riesgo y paneles personalizados.",
+    icon: "🏢",
+    bg: "#1E1E20",
+    iconBg: "#0C0C0E",
+  },
+  {
+    title: "Traders minoristas",
+    desc: "Ideal para gestionar cuentas financiadas o personales sin necesidad de conocimientos técnicos.",
+    icon: "🛍️",
+    bg: "#1E1E20",
+    iconBg: "#0C0C0E",
+  },
+]
+.map(({ title, desc, icon, bg, iconBg }, idx) => (
+          <div
+            key={idx}
+            style={{
+              flex: "1 1 300px",
+              background: "linear-gradient(135deg, #1E1E20, #151518)",
+              borderRadius: 12,
+              padding: 24,
+              color: "#FAFAFA",
+              display: "flex",
+              flexDirection: "column",
+              gap: 12,
+              maxWidth: 500,
+              minWidth: 280,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: iconBg,
+                width: 40,
+                height: 40,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 8,
+                fontSize: 20,
+              }}
+            >
+              {icon}
+            </div>
+            <div style={{ fontSize: 18, fontWeight: 600 }}>{title}</div>
+            <div style={{ color: "#A1A1AA", fontSize: 14 }}>{desc}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div style={{
+      backgroundColor: "#09090B",
+      padding: "96px 24px",
+      fontFamily: "Inter, sans-serif",
+      color: "#FAFAFA",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 48,
+    }}>
+<div style={{ textAlign: "center", maxWidth: 800 }}>
+  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 600 }}>
+    Por qué elegirnos
+  </div>
+  <h2 style={{ fontSize: 32, fontWeight: 700, margin: "16px 0" }}>
+    ¿Por qué elegir OnlyGenius?
+  </h2>
+  <p style={{ color: "#A1A1AA", fontSize: 16 }}>
+    Descubrí las ventajas que nos convierten en la elección preferida de traders algorítmicos en todo el mundo.
+  </p>
+</div>
+
+      <div style={{
+        width: "100%",
+        maxWidth: 1000,
+        overflowX: "auto",
+        borderRadius: 8,
+        border: "1px solid #27272A",
+      }}>
+        <table style={{
+          width: "100%",
+          borderCollapse: "collapse",
+          fontSize: 14,
+        }}>
+          <thead>
+            <tr style={{ backgroundColor: "#18181B", color: "#A1A1AA", textAlign: "left" }}>
+              <th style={{ padding: "16px 24px" }}>Features</th>
+              <th style={{ padding: "16px 24px" }}>ONLYGENIUS</th>
+              <th style={{ padding: "16px 24px" }}>Other platforms</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(({ feature, onlyGenius, others }, index) => (
+              <tr
+                key={feature}
+                style={{
+                  backgroundColor: index % 2 === 0 ? "#101012" : "#09090B",
+                }}
+              >
+                <td style={{ padding: "16px 24px", color: "#FAFAFA" }}>{feature}</td>
+                <td style={{ padding: "16px 24px", color: "#FAFAFA" }}>{onlyGenius}</td>
+                <td style={{ padding: "16px 24px", color: "#A1A1AA" }}>{others}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
 </div>
 
   )
