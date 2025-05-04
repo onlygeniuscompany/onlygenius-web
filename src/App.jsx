@@ -25,7 +25,7 @@ function App() {
       maxWidth: 1280,
       margin: "0 auto",
       padding: "0 16px",
-      width: "100%",
+      width: "90%",
     };
   
     const heading = {
