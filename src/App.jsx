@@ -1,7 +1,3 @@
-// import Navbar from "./components/Navbar"
-import CompatibilitySection from "./components/CompatibilitySection"
-import Hero from "./components/Hero"
-import CoreServices from "./components/CoreServices"
 function App() {
   const rows = [
     {
@@ -153,6 +149,7 @@ function App() {
           >
             Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
           </p>
+          <a href="https://calendly.com/onlygenius-support/30min">
           <div
             style={{
               display: "inline-flex",
@@ -166,7 +163,6 @@ function App() {
               color: "white",
               cursor: "pointer",
             }}
-            onClick={"https://calendly.com/onlygenius-support/30min"}
           >
             Empezar
             <div
@@ -179,6 +175,7 @@ function App() {
               }}
             />
           </div>
+          </a>
         </div>
 
         {/* Imagen del dashboard */}
