@@ -265,33 +265,48 @@ function App() {
 
               {/* Cards */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                {[
-                  { name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
-                  { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
-                  { name: 'cTrader', active: false, icon: '/cTrader mark.png' },
-                ].map(({ name, active, icon }) => (
-                  <div
-                    key={name}
-                    style={{
-                      padding: '16px 24px',
-                      border: active ? '1px solid #2563EB' : '1px solid #27272A',
-                      backgroundColor: active ? '#18181B' : 'transparent',
-                      borderRadius: 8,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: 12,
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                      <img src={icon} alt={`${name} icon`} style={{ width: 24, height: 24 }} />
-                      <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
-                    </div>
-                    <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
-                    Mirá cómo nuestros algoritmos aparecen directamente en tu terminal de MT4 con monitoreo de rendimiento en tiempo real y configuración de riesgo personalizada.
-                    </div>
-                  </div>
-                ))}
-              </div>
+  {[
+    {
+      name: 'MetaTrader 4',
+      active: false,
+      icon: '/MT4 Logo mark.png',
+      description: 'Conectá tu cuenta de MT4 y automatizá tu estrategia usando nuestros algoritmos sin intervención manual.'
+    },
+    {
+      name: 'MetaTrader 5',
+      active: true,
+      icon: '/MT5 Logo mark.png',
+      description: 'Nuestra integración con MT5 permite monitoreo avanzado, múltiples órdenes y ejecución optimizada.'
+    },
+    {
+      name: 'cTrader',
+      active: false,
+      icon: '/cTrader mark.png',
+      description: 'Operá con cTrader y aprovechá las funcionalidades de trading institucional que ofrecemos.'
+    },
+  ].map(({ name, active, icon, description }) => (
+    <div
+      key={name}
+      style={{
+        padding: '16px 24px',
+        border: active ? '1px solid #2563EB' : '1px solid #27272A',
+        backgroundColor: active ? '#18181B' : 'transparent',
+        borderRadius: 8,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 12,
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <img src={icon} alt={`${name} icon`} style={{ width: 24, height: 24 }} />
+        <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
+      </div>
+      <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
+        {description}
+      </div>
+    </div>
+  ))}
+</div>
             </div>
 
             {/* Image */}
