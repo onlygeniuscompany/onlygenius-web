@@ -112,16 +112,17 @@ function App() {
       color: "#FAFAFA",
       fontFamily: "Inter, sans-serif",
       width: "100%",
-      overflowX: "hidden"
+      overflowX: "hidden",
+       minHeight: "100vh"
     }}>
       <div style={{
-            display: "flex",
-            gap: 16,
-            flexWrap: "wrap",
-            justifyContent: "center",
-            flexGrow: 1,
-            marginTop: 50
-          }}>
+  display: "flex",
+  gap: 16,
+  flexWrap: "wrap",
+  justifyContent: "center",  // Esto centra el contenido, pero sólo el logo está acá
+  flexGrow: 1,
+  marginTop: 75,
+}}>
             <img
           
           src="/White.png" // Reemplaza con la ruta de tu logo

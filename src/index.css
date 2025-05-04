@@ -1,14 +1,25 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /* opcional: estilos globales */
-html, body {
-  @apply bg-background text-foreground h-full w-full;
+/* html,
+body,
+#root {
+  @apply h-full w-full bg-background text-foreground;
   margin: 0;
   padding: 0;
+} */
+html, body {
+   /* height: 100%; */
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  background-color: #09090B; /* el mismo fondo que usás en tu app */
+  color: #FAFAFA; /* o el que necesites */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -23,7 +34,7 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  } 
 
 a {
   font-weight: 500;
