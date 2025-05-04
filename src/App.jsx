@@ -146,33 +146,18 @@ function App() {
   }}
 >
   {/* Texto */}
-  <div style={{ fontSize: 16, fontWeight: 600, color: '#2563EB' }}>Since 2012</div>
+  <div style={{ fontSize: 16, fontWeight: 600, color: '#2563EB' }}>Desde 2012</div>
+  <h1 style={{ fontSize: window.innerWidth < 768 ? 28 : 48, fontWeight: 700, lineHeight: '56px', margin: '24px 0', color: '#FAFAFA' }}>
+  Tu puerta de entrada a la gestión de capital <span style={{ color: '#2563EB' }}>algorítmica</span>
+</h1>
 
-  <h1
-    style={{
-      fontSize: window.innerWidth < 768 ? 28 : 48,
-      fontWeight: 700,
-      lineHeight: '56px',
-      margin: '24px 0',
-      color: '#FAFAFA',
-    }}
-  >
-    Your gateway to <span style={{ color: '#2563EB' }}>algorithmic</span> capital management
-  </h1>
-
-  <p
-    style={{
-      fontSize: 16,
-      color: '#A1A1AA',
-      maxWidth: 672,
-      margin: '0 auto 32px',
-    }}
-  >
-    Professional technology for traders, companies, and long-term capital strategies.
-  </p>
+<p style={{ fontSize: 16, color: '#A1A1AA', maxWidth: 672, margin: '0 auto 32px' }}>
+  Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
+</p>
 
   {/* Imagen del mundo detrás del botón */}
   <div
+
     style={{
       position: 'relative',
       display: 'inline-block',
@@ -207,7 +192,7 @@ function App() {
         position: 'relative',
       }}
     >
-      Get started
+      Empezar
       <div
         style={{
           width: 12,
@@ -264,10 +249,10 @@ function App() {
     >
 <div style={heading}>Core Services</div>
 <div style={title}>
-Fully automated account management. No hassle.
+Gestión de cuentas totalmente automatizada. Sin complicaciones.
 </div>
 <div style={subtitle}>
-We handle the trading. You define your goals.
+Nosotros operamos. Vos definís los objetivos.
 </div>
 </div>
 
@@ -282,20 +267,22 @@ justifyContent: 'center',
 >
 {[
 {
-title: 'Algorithmic account management',
-desc: `We manage accounts on brokers or prop firms using our proprietary algorithms.\nFully automated—no action required on your part.`,
-img:"/Bot.png"
-},
+  title: 'Gestión algorítmica de cuentas',
+  desc: `Gestionamos cuentas en brokers o firmas de prop trading usando nuestros algoritmos propietarios.\nTotalmente automatizado—no necesitás hacer nada.`,
+  img:"/Bot.png"
+}
+,
 {
-title: 'High-performance exclusive algorithms',
-desc: `Audited and optimized strategies designed to operate in top-tier trading`,
-img:"/Data graph 1.png"
-},
+  title: 'Algoritmos exclusivos de alto rendimiento',
+  desc: `Estrategias auditadas y optimizadas para operar en mercados de primer nivel`,
+  img:"/Data graph 1.png"
+}
+,
 {
-title: 'Custom-built trading robots',
-desc: `Already have a strategy? We turn it into a functional robot (MT4, MT5 or cTrader).`,
-img:"/Bot Add.png"
-},
+  title: 'Robots de trading personalizados',
+  desc: '¿Ya tenés una estrategia? La convertimos en un robot funcional (MT4, MT5 o cTrader).',
+  img:"/Data graph 1.png"
+}
 ].map(({ title, desc, img }, idx) => (
 <div key={idx} style={cardStyle}>
 <img src={img} style={{ width: 48, height: 48, borderRadius: 8 }} />
@@ -323,7 +310,7 @@ lineHeight: '24px',
 </div>
 </div>
 <div style={learnMore}>
-Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
+Saber más <span style={{ fontSize: 18 }}>{'→'}</span>
 </div>
 </div>
 </div>
@@ -375,7 +362,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             fontFamily: 'Inter, sans-serif',
           }}
         >
-          Compatibility
+          Compatibilidad
         </div>
         <div
           style={{
@@ -386,8 +373,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             lineHeight: '1.2',
           }}
         >
-          Compatible with the most widely used trading platforms
-        </div>
+Compatible con las plataformas de trading más utilizadas        </div>
         <div
           style={{
             color: '#A1A1AA',
@@ -397,7 +383,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
             lineHeight: '24px',
           }}
         >
-          Our systems are ready to operate on:
+          Nuestros sistemas están listos para operar en:
         </div>
       </div>
 
@@ -425,8 +411,7 @@ Learn more <span style={{ fontSize: 18 }}>{'→'}</span>
               <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
             </div>
             <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
-              See how our algorithms appear directly in your MT4 terminal with real-time performance
-              monitoring and customizable risk settings.
+            Mirá cómo nuestros algoritmos aparecen directamente en tu terminal de MT4 con monitoreo de rendimiento en tiempo real y configuración de riesgo personalizada.
             </div>
           </div>
         ))}
