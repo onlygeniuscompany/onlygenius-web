@@ -3,51 +3,7 @@ import CompatibilitySection from "./components/CompatibilitySection"
 import Hero from "./components/Hero"
 import CoreServices from "./components/CoreServices"
 function App() {
-  const cardStyle = {
-    flex: '1 1 0',
-    padding: 24,
-    position: 'relative',
-    backgroundColor: '#09090B',
-    overflow: 'hidden',
-    borderRadius: 12,
-    border: '1px solid #27272A',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-    gap: 64,
-    };
-    
-    const heading = {
-    textAlign: 'center',
-    color: '#2563EB',
-    fontSize: 16,
-    fontFamily: 'Inter, sans-serif',
-    fontWeight: 600,
-    lineHeight: '24px',
-    };
-    
-    const title = {
-    alignSelf: 'stretch',
-    textAlign: 'center',
-    color: '#FAFAFA',
-    fontSize: 36,
-    fontFamily: 'Inter, sans-serif',
-    fontWeight: 700,
-    lineHeight: '40px',
-    };
-    
-    const subtitle = {
-    alignSelf: 'stretch',
-    textAlign: 'center',
-    color: '#A1A1AA',
-    fontSize: 16,
-    fontFamily: 'Inter, sans-serif',
-    fontWeight: 400,
-    lineHeight: '24px',
-    };
-    
-    const learnMore = {
+  const learnMore = {
     color: '#2563EB',
     fontSize: 14,
     fontWeight: 500,
@@ -56,391 +12,311 @@ function App() {
     gap: 8,
     cursor: 'pointer',
     };
-  // <div className="bg-black min-h-screen text-white">
-  //     {/* Agrega tus páginas o secciones aquí */}
-  //     <Hero/>
-  //     <CompatibilitySection/>
-  //     <CoreServices/>
-  // </div>
-      //   <div style={{ padding: "24px 5%", maxWidth: 1440, margin: "0 auto" }}>
-      //   {/* NAVBAR */}
-      //   <div style={{
-      //     display: "flex",
-      //     flexWrap: "wrap",
-      //     justifyContent: "space-between",
-      //     alignItems: "center",
-      //     gap: 16,
-      //   }}>
-      //     <img
-          
-      //   src="/White.png" // Reemplaza con la ruta de tu logo
-      //   alt="Logo"
-      //   style={{
-      //     width: '250px', // Tamaño del logo en la navbar
-      //     height: 'auto', // Mantiene la proporción
-      //   }}
-      // />
-      //     {/* <img src="/White.png" alt="" /> */}
-      //     {/* <div style={{ fontWeight: "bold", fontSize: 18, letterSpacing: 2 }}>ONLYGENIUS</div> */}
-      //     <div style={{
-      //       display: "flex",
-      //       gap: 16,
-      //       flexWrap: "wrap",
-      //       justifyContent: "center",
-      //       flexGrow: 1
-      //     }}>
-      //       {["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((item) => (
-      //         <div key={item} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer" }}>{item}</div>
-      //       ))}
-      //     </div>
-      //     <div style={{
-      //       backgroundColor: "#2563EB",
-      //       borderRadius: 6,
-      //       padding: "8px 16px",
-      //       fontSize: 14,
-      //       fontWeight: 500,
-      //       color: "white",
-      //       whiteSpace: "nowrap"
-      //     }}>
-      //       Client area
-      //     </div>
-      //   </div>
-      // </div>
-  return (
-    <div style={{
+    const wrapper = {
       background: "#09090B",
       color: "#FAFAFA",
       fontFamily: "Inter, sans-serif",
       width: "100%",
       overflowX: "hidden",
-       minHeight: "100vh"
-    }}>
-      <div style={{
-  display: "flex",
-  gap: 16,
-  flexWrap: "wrap",
-  justifyContent: "center",  // Esto centra el contenido, pero sólo el logo está acá
-  flexGrow: 1,
-  marginTop: 75,
-}}>
-            <img
-          
-          src="/White.png" // Reemplaza con la ruta de tu logo
-          alt="Logo"
-          style={{
-            width: '250px', // Tamaño del logo en la navbar
-            height: 'auto', // Mantiene la proporción
-          }}
-        />
-          </div>
-      {/* Responsive wrapper */}
-
-      <div
-  style={{
-    position: 'relative',
-    textAlign: 'center',
-    padding: '64px 5% 0',
-    maxWidth: 1280,
-    margin: '0 auto',
-    fontFamily: 'Inter, sans-serif',
-    overflow: 'hidden',
-  }}
->
-  {/* Texto */}
-  <div style={{ fontSize: 16, fontWeight: 600, color: '#2563EB' }}>Desde 2012</div>
-  <h1 style={{ fontSize: window.innerWidth < 768 ? 28 : 48, fontWeight: 700, lineHeight: '56px', margin: '24px 0', color: '#FAFAFA' }}>
-  Tu puerta de entrada a la gestión de capital <span style={{ color: '#2563EB' }}>algorítmica</span>
-</h1>
-
-<p style={{ fontSize: 16, color: '#A1A1AA', maxWidth: 672, margin: '0 auto 32px' }}>
-  Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
-</p>
-
-  {/* Imagen del mundo detrás del botón */}
-  <div
-
-    style={{
-      position: 'relative',
-      display: 'inline-block',
-    }}
-  >
-    {/* <img
-      src="/Global Ball 1.png" // ⬅️ asegurate de cambiarlo si el nombre es distinto
-      alt="Globe background"
-      style={{
-        width: 280,
-        position: 'absolute',
-        top: -90,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        zIndex: -1,
-        opacity: 0.3,
-      }}
-    /> */}
-    <div
-      style={{
-        backgroundColor: '#2563EB',
-        borderRadius: 6,
-        padding: '8px 16px',
-        fontSize: 14,
-        fontWeight: 500,
-        color: 'white',
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 8,
-        cursor: 'pointer',
-        zIndex: 2,
-        position: 'relative',
-      }}
-    >
-      Empezar
-      <div
-        style={{
-          width: 12,
-          height: 12,
-          borderTop: '2px solid white',
-          borderRight: '2px solid white',
-          transform: 'rotate(45deg)',
-        }}
-      ></div>
-    </div>
-  </div>
-</div>
-
-{/* Imagen del dashboard */}
-<div style={{ display: 'flex', justifyContent: 'center', padding: '64px 24px' }}>
-  <img
-    src="/image (2).png"
-    alt="dashboard preview"
-    style={{ maxWidth: 1200, width: '100%', borderRadius: 16 }}
-  />
-</div>
-<div
-  style={{
-    width: '95%',
-    padding: '96px 24px',
-    backgroundColor: '#09090B',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    fontFamily: 'Inter, sans-serif',
-    gap: 24,
-  }}
->
-  <div
-    style={{
-      width: '100%',
+      minHeight: "100vh",
+    };
+  
+    const container = {
       maxWidth: 1280,
-      padding: '0 16px',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 64,
-    }}
-  >
-    <div
-      style={{
-        maxWidth: 576,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: 20,
-        textAlign: 'center',
-      }}
-    >
-<div style={heading}>Core Services</div>
-<div style={title}>
-Gestión de cuentas totalmente automatizada. Sin complicaciones.
-</div>
-<div style={subtitle}>
-Nosotros operamos. Vos definís los objetivos.
-</div>
-</div>
-
-<div
-style={{
-display: 'flex',
-gap: 24,
-width: '100%',
-alignItems: 'flex-start',
-justifyContent: 'center',
-}}
->
-{[
-{
-  title: 'Gestión algorítmica de cuentas',
-  desc: `Gestionamos cuentas en brokers o firmas de prop trading usando nuestros algoritmos propietarios.\nTotalmente automatizado—no necesitás hacer nada.`,
-  img:"/Bot.png"
-}
-,
-{
-  title: 'Algoritmos exclusivos de alto rendimiento',
-  desc: `Estrategias auditadas y optimizadas para operar en mercados de primer nivel`,
-  img:"/Data graph 1.png"
-}
-,
-{
-  title: 'Robots de trading personalizados',
-  desc: '¿Ya tenés una estrategia? La convertimos en un robot funcional (MT4, MT5 o cTrader).',
-  img:"/Data graph 1.png"
-}
-].map(({ title, desc, img }, idx) => (
-<div key={idx} style={cardStyle}>
-<img src={img} style={{ width: 48, height: 48, borderRadius: 8 }} />
-<div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-<div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-<div
-style={{
-color: '#FAFAFA',
-fontSize: 20,
-fontWeight: 500,
-lineHeight: '28px',
-}}
->
-{title}
-</div>
-<div
-style={{
-color: '#A1A1AA',
-fontSize: 16,
-fontWeight: 400,
-lineHeight: '24px',
-}}
->
-{desc}
-</div>
-</div>
-<div style={learnMore}>
-Saber más <span style={{ fontSize: 18 }}>{'→'}</span>
-</div>
-</div>
-</div>
-))}
-</div>
-</div>
-</div>
-<div
-  style={{
-    width: '100%',
-    padding: '96px 24px',
-    background: '#09090B',
-    overflow: 'hidden',
-    display: 'flex',
-    flexDirection: 'column',
-    fontFamily: 'Inter, sans-serif',
-    alignItems: 'center',
-    gap: '64px',
-  }}
->
-  <div
-    style={{
-      width: '100%',
-      maxWidth: '1280px',
-      display: 'flex',
-      flexDirection: window.innerWidth < 1024 ? 'column' : 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      gap: 48,
-    }}
-  >
-    {/* Text + Cards */}
-    <div
-      style={{
-        flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 32,
-        zIndex: 2,
-      }}
-    >
-      {/* Text */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-        <div
-          style={{
-            color: '#2563EB',
-            fontSize: 14,
-            fontWeight: 600,
-            fontFamily: 'Inter, sans-serif',
-          }}
-        >
-          Compatibilidad
-        </div>
-        <div
-          style={{
-            color: '#FAFAFA',
-            fontSize: window.innerWidth < 768 ? 24 : 36,
-            fontWeight: 700,
-            fontFamily: 'Inter, sans-serif',
-            lineHeight: '1.2',
-          }}
-        >
-Compatible con las plataformas de trading más utilizadas        </div>
-        <div
-          style={{
-            color: '#A1A1AA',
-            fontSize: 16,
-            fontWeight: 400,
-            fontFamily: 'Inter, sans-serif',
-            lineHeight: '24px',
-          }}
-        >
-          Nuestros sistemas están listos para operar en:
-        </div>
-      </div>
-
-      {/* Cards */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-        {[
-          { name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
-          { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
-          { name: 'cTrader', active: false, icon: '/cTrader mark.png' },
-        ].map(({ name, active, icon }) => (
+      margin: "0 auto",
+      padding: "0 16px",
+      width: "100%",
+    };
+  
+    const heading = {
+      textAlign: "center",
+      color: "#2563EB",
+      fontSize: 16,
+      fontWeight: 600,
+      lineHeight: "24px",
+    };
+  
+    const title = {
+      textAlign: "center",
+      color: "#FAFAFA",
+      fontSize: "clamp(28px, 5vw, 36px)",
+      fontWeight: 700,
+      lineHeight: "40px",
+    };
+  
+    const subtitle = {
+      textAlign: "center",
+      color: "#A1A1AA",
+      fontSize: 16,
+      fontWeight: 400,
+      lineHeight: "24px",
+    };
+  
+    const cardStyle = {
+      flex: "1 1 0",
+      padding: 24,
+      backgroundColor: "#09090B",
+      borderRadius: 12,
+      border: "1px solid #27272A",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      gap: 24,
+      minWidth: 280,
+    };
+  
+    return (
+      <div style={wrapper}>
+        <div style={container}>
+          {/* Navbar */}
           <div
-            key={name}
             style={{
-              padding: '16px 24px',
-              border: active ? '1px solid #2563EB' : '1px solid #27272A',
-              backgroundColor: active ? '#18181B' : 'transparent',
-              borderRadius: 8,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 12,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+              padding: "24px 0",
+              gap: 16,
+              marginTop:50
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              <img src={icon} alt={`${name} icon`} style={{ width: 24, height: 24 }} />
-              <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
+            <img
+              src="/White.png"
+              alt="Logo"
+              style={{ width: 300, height: "auto"  }}
+            />
             </div>
-            <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
-            Mirá cómo nuestros algoritmos aparecen directamente en tu terminal de MT4 con monitoreo de rendimiento en tiempo real y configuración de riesgo personalizada.
+        {/* Responsive wrapper */}
+
+        <div style={{ textAlign: "center", padding: "64px 0" }}>
+          <div style={heading}>Desde 2012</div>
+          <h1
+            style={{
+              fontSize: "clamp(28px, 6vw, 48px)",
+              fontWeight: 700,
+              lineHeight: "56px",
+              margin: "24px 0",
+            }}
+          >
+            Tu puerta de entrada a la gestión de capital <span style={{ color: "#2563EB" }}>algorítmica</span>
+          </h1>
+          <p
+            style={{
+              fontSize: 16,
+              color: "#A1A1AA",
+              maxWidth: 672,
+              margin: "0 auto 32px",
+            }}
+          >
+            Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
+          </p>
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              backgroundColor: "#2563EB",
+              borderRadius: 6,
+              padding: "8px 16px",
+              fontSize: 14,
+              fontWeight: 500,
+              color: "white",
+              cursor: "pointer",
+            }}
+          >
+            Empezar
+            <div
+              style={{
+                width: 12,
+                height: 12,
+                borderTop: "2px solid white",
+                borderRight: "2px solid white",
+                transform: "rotate(45deg)",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Imagen del dashboard */}
+        <div style={{ textAlign: "center", padding: "64px 0" }}>
+          <img
+            src="/image (2).png"
+            alt="Dashboard preview"
+            style={{
+              maxWidth: "100%",
+              borderRadius: 16,
+            }}
+          />
+        </div>
+
+        {/* Core Services */}
+        <div style={{ padding: "64px 0" }}>
+          <div style={heading}>Core Services</div>
+          <div style={title}>Gestión de cuentas totalmente automatizada. Sin complicaciones.</div>
+          <div style={subtitle}>Nosotros operamos. Vos definís los objetivos.</div>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 24,
+              justifyContent: "center",
+              marginTop: 48,
+            }}
+          >
+            {[
+              {
+                title: "Gestión algorítmica de cuentas",
+                desc: "Gestionamos cuentas en brokers o firmas de prop trading usando nuestros algoritmos propietarios. Totalmente automatizado—no necesitás hacer nada.",
+                img: "/Bot.png",
+              },
+              {
+                title: "Algoritmos exclusivos de alto rendimiento",
+                desc: "Estrategias auditadas y optimizadas para operar en mercados de primer nivel.",
+                img: "/Data graph 1.png",
+              },
+              {
+                title: "Robots de trading personalizados",
+                desc: "¿Ya tenés una estrategia? La convertimos en un robot funcional (MT4, MT5 o cTrader).",
+                img: "/Data graph 1.png",
+              },
+            ].map(({ title, desc, img }, idx) => (
+              <div key={idx} style={cardStyle}>
+                <img src={img} alt="" style={{ width: 48, height: 48, borderRadius: 8 }} />
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ fontSize: 20, fontWeight: 500 }}>{title}</div>
+                  <div style={{ color: "#A1A1AA", fontSize: 16 }}>{desc}</div>
+                  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 500, cursor: "pointer" }}>
+                    Saber más →
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+        </div>
+        <div
+          style={{
+            width: '100%',
+            padding: '96px 24px',
+            background: '#09090B',
+            overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            fontFamily: 'Inter, sans-serif',
+            alignItems: 'center',
+            gap: '64px',
+          }}
+        >
+          <div
+            style={{
+              width: '100%',
+              maxWidth: '1280px',
+              display: 'flex',
+              flexDirection: window.innerWidth < 1024 ? 'column' : 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: 48,
+            }}
+          >
+            {/* Text + Cards */}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 32,
+                zIndex: 2,
+              }}
+            >
+              {/* Text */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                <div
+                  style={{
+                    color: '#2563EB',
+                    fontSize: 14,
+                    fontWeight: 600,
+                    fontFamily: 'Inter, sans-serif',
+                  }}
+                >
+                  Compatibilidad
+                </div>
+                <div
+                  style={{
+                    color: '#FAFAFA',
+                    fontSize: window.innerWidth < 768 ? 24 : 36,
+                    fontWeight: 700,
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '1.2',
+                  }}
+                >
+        Compatible con las plataformas de trading más utilizadas        </div>
+                <div
+                  style={{
+                    color: '#A1A1AA',
+                    fontSize: 16,
+                    fontWeight: 400,
+                    fontFamily: 'Inter, sans-serif',
+                    lineHeight: '24px',
+                  }}
+                >
+                  Nuestros sistemas están listos para operar en:
+                </div>
+              </div>
+
+              {/* Cards */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                {[
+                  { name: 'MetaTrader 4', active: false, icon: '/MT4 Logo mark.png' },
+                  { name: 'MetaTrader 5', active: true, icon: '/MT5 Logo mark.png' },
+                  { name: 'cTrader', active: false, icon: '/cTrader mark.png' },
+                ].map(({ name, active, icon }) => (
+                  <div
+                    key={name}
+                    style={{
+                      padding: '16px 24px',
+                      border: active ? '1px solid #2563EB' : '1px solid #27272A',
+                      backgroundColor: active ? '#18181B' : 'transparent',
+                      borderRadius: 8,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 12,
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <img src={icon} alt={`${name} icon`} style={{ width: 24, height: 24 }} />
+                      <div style={{ color: '#FAFAFA', fontSize: 18, fontWeight: 500 }}>{name}</div>
+                    </div>
+                    <div style={{ color: '#A1A1AA', fontSize: 14, lineHeight: '20px' }}>
+                    Mirá cómo nuestros algoritmos aparecen directamente en tu terminal de MT4 con monitoreo de rendimiento en tiempo real y configuración de riesgo personalizada.
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Image */}
+            <div
+              style={{
+                flex: 1,
+                position: 'relative',
+                width: '100%',
+                maxWidth: 600,
+                minWidth: 280,
+              }}
+            >
+              <img
+                src="/3_2 screen mockup.png"
+                alt="Trading platform"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: 12,
+                }}
+              />
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-
-    {/* Image */}
-    <div
-      style={{
-        flex: 1,
-        position: 'relative',
-        width: '100%',
-        maxWidth: 600,
-        minWidth: 280,
-      }}
-    >
-      <img
-        src="/3_2 screen mockup.png"
-        alt="Trading platform"
-        style={{
-          width: '100%',
-          height: 'auto',
-          borderRadius: 12,
-        }}
-      />
-    </div>
-  </div>
-</div>
 </div>
 
   )
