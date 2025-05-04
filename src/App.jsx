@@ -116,7 +116,7 @@ function App() {
               flexWrap: "wrap",
               padding: "24px 0",
               gap: 16,
-              marginTop:50
+              marginTop:15
             }}
           >
             <img
@@ -127,14 +127,14 @@ function App() {
             </div>
         {/* Responsive wrapper */}
 
-        <div style={{ textAlign: "center", padding: "64px 0" }}>
+        <div style={{ textAlign: "center", padding: "25px 0" }}>
           <div style={heading}>Desde 2012</div>
           <h1
             style={{
               fontSize: "clamp(28px, 6vw, 48px)",
               fontWeight: 700,
               lineHeight: "56px",
-              margin: "24px 0",
+              margin: "10px 0",
             }}
           >
             Tu puerta de entrada a la gestión de capital <span style={{ color: "#2563EB" }}>algorítmica</span>
@@ -144,7 +144,7 @@ function App() {
               fontSize: 16,
               color: "#A1A1AA",
               maxWidth: 672,
-              margin: "0 auto 32px",
+              margin: "0 auto 25px",
             }}
           >
             Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
@@ -179,7 +179,7 @@ function App() {
         </div>
 
         {/* Imagen del dashboard */}
-        <div style={{ textAlign: "center", padding: "64px 0" }}>
+        <div style={{ textAlign: "center", padding: "25px 0" }}>
           <img
             src="/image (2).png"
             alt="Dashboard preview"
@@ -226,9 +226,12 @@ function App() {
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   <div style={{ fontSize: 20, fontWeight: 500 }}>{title}</div>
                   <div style={{ color: "#A1A1AA", fontSize: 16 }}>{desc}</div>
-                  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 500, cursor: "pointer" }} onClick={"https://calendly.com/onlygenius-support/30min"}>
+                  <a href="https://calendly.com/onlygenius-support/30min">
+
+                  <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 500, cursor: "pointer" }} >
                     Saber más →
                   </div>
+                  </a>
                 </div>
               </div>
             ))}
