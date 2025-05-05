@@ -1,11 +1,11 @@
-import CompatibilitySection from "../components/CompatibilitySection";
+import CompatibilitySection from "../components/Landing/CompatibilitySection";
 import Conversion from "../components/Conversion";
-import CoreServices from "../components/CoreServices";
-import GlobalReach from "../components/GlobalReach";
-import Hero from "../components/Hero";
-import InHouseTechnologySection from "../components/InHouseTechnologySection";
-import TrustedBy from "../components/TrustedBy";
-import WhyUs from "../components/WhyUs";
+import CoreServices from "../components/Landing/CoreServices";
+import GlobalReach from "../components/Landing/GlobalReach";
+import Hero from "../components/Landing/Hero";
+import InHouseTechnologySection from "../components/Landing/InHouseTechnologySection";
+import TrustedBy from "../components/Landing/TrustedBy";
+import WhyUs from "../components/Landing/WhyUs";
 
 
 

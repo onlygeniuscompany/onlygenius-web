@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-
 export default function NavbarComp () {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const navItems = [
-    'Services',
-    'Our Algorithms',
-    'Affiliate program',
-    'FAQs',
-    'Partners',
-    'Collections',
+    {name:'Servicios',to:'services'},
+    {name:'Algoritmos',to:''},
+    {name:'Programa de afiliados',to:'afiliados'},
+    {name:'FAQs',to:'faq'},
+    {name:'Partners',to:''},
   ];
 
   return (
@@ -24,32 +22,40 @@ export default function NavbarComp () {
           <div className="h-[2px] bg-white" />
           <div className="h-[2px] bg-white" />
         </div>
-        <img src="/White.png" alt="OnlyGenius Logo" className="h-[14px]" />
+        <a href="/">
+          <img src="/White.png" alt="OnlyGenius Logo" className="h-[14px]" />
+        </a>
+        <a href="https://calendly.com/onlygenius-support/30min">
         <div className="hidden md:block bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium whitespace-nowrap cursor-pointer">
-          Client area
+        Contacto
         </div>
+        </a>
       </div>
 
       <div className="hidden md:flex justify-center gap-8 pb-4">
-        {navItems.map((item) => (
+        {navItems.map((item,i) => (
+          <a href={item.to} key={i}>
           <div
-            key={item}
+            key={i}
             className="text-[14px] font-medium text-[#E4E4E7] cursor-pointer"
           >
-            {item}
+            {item.name}
           </div>
+          </a>
         ))}
       </div>
 
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-[#0A0A0A] flex flex-col gap-4 px-6 py-6 border-t border-[#27272A] md:hidden">
-          {navItems.map((item) => (
+          {navItems.map((item,i) => (
+          <a href={item.to} key={i}>
             <div
-              key={item}
+              key={i}
               className="text-[16px] font-medium text-[#E4E4E7] cursor-pointer"
             >
-              {item}
+              {item.name}
             </div>
+          </a>
           ))}
           <a href="https://calendly.com/onlygenius-support/30min"></a>
           <div className="mt-4 bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium text-center cursor-pointer">
