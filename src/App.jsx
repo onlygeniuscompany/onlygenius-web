@@ -1,27 +1,25 @@
-import CompatibilitySection from "./components/CompatibilitySection";
-import CoreServices from "./components/CoreServices";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
 import Foot from "./components/Footer";
-import Hero from "./components/Hero";
-import NavBar from "./components/Navbar";
-import TrustedBy from "./components/TrustedBy";
-import WhyUs from "./components/WhyUs";
+import Navbar from "./components/Navbar";
+import FAQ from "./pages/FAQ";
 
-
-
-
-
-export default function App() {
+function App() {
   return (
-    <div className="bg-[#09090B] text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen">
-      <div className="max-w-[1280px] mx-auto px-4 w-[90%]">
-        <NavBar/>
-        <Hero/>
-        <CoreServices/>
-        <CompatibilitySection/>
-        <TrustedBy/>
-        <WhyUs/>
-        <Foot/>
-      </div>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Landing />} />        {/* Página principal */}
+        <Route path="/faq" element={<FAQ />} />        {/* Página principal */}
+        {/* <Route path="/about" element={<About />} />  Acerca de */}
+        {/* <Route path="/contact" element={<Contact />} /> Contacto */}
+      </Routes>
+      <Foot/>
+
+    </Router>
   );
 }
+
+export default App;
