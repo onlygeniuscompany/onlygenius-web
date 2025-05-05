@@ -107,7 +107,7 @@ function App() {
     return (
       <div style={wrapper}>
         <div style={container}>
-          {/* Navbar */}
+          Navbar
           <div
             style={{
               display: "flex",
