@@ -5,7 +5,7 @@ import Landing from "./pages/Landing";
 // import Contact from "./pages/Contact";
 import Foot from "./components/Footer";
 import FAQ from "./pages/FAQ";
-import NavbarComp from "./components/Navbar.jsx";
+import NavbarComp from "./components/NavbarComp.jsx";
 
 
 function App() {
