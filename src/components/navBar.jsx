@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Navbar = () => {
+export default function Navbar () {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -60,4 +60,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
