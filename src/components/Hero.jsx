@@ -1,52 +1,39 @@
 // HeroWithNavbar.jsx
 import React from "react";
 
-const HeroWithNavbar = () => {
+const Hero = () => {
 return (
-<div style={{ background: "#09090B", color: "#FAFAFA", fontFamily: "Inter, sans-serif" }}>
-{/* NAVBAR */}
-<div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 80px", maxWidth: 1440, margin: "0 auto" }}>
-<div style={{ fontWeight: "bold", fontSize: 18, letterSpacing: 2 }}>ONLYGENIUS</div>
-<div style={{ display: "flex", gap: 24 }}>
-{["Services", "Our Algorithms", "Affiliate program", "FAQs", "Partners", "Collections"].map((item) => (
-<div
-key={item}
-style={{ fontSize: 14, fontWeight: 500, color: "#FAFAFA", cursor: "pointer" }}
->
-{item}
-</div>
-))}
-</div>
-<div style={{ backgroundColor: "#2563EB", borderRadius: 6, padding: "8px 16px", fontSize: 14, fontWeight: 500, color: "white", cursor: "pointer" }}>
-Client area
-</div>
+<div className="bg-[#09090B] text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen">
+  <div className="max-w-[1280px] mx-auto px-4 w-[90%]">
+
+    {/* Hero Section */}
+    <div className="text-center py-[25px]">
+      <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2012</div>
+      <h1 className="text-[clamp(28px,6vw,48px)] font-bold leading-[56px] my-[10px]">
+        Tu puerta de entrada a la gestión de capital <span className="text-[#2563EB]">algorítmica</span>
+      </h1>
+      <p className="text-[16px] text-[#A1A1AA] max-w-[672px] mx-auto mb-[25px]">
+        Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
+      </p>
+      <a href="https://calendly.com/onlygenius-support/30min">
+        <div className="inline-flex items-center gap-2 bg-[#2563EB] rounded-md px-4 py-2 text-[14px] font-medium text-white cursor-pointer">
+          Empezar
+          <div className="w-3 h-3 border-t-2 border-r-2 border-white rotate-45"></div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <div className="text-center py-[25px]">
+      <img
+        src="/image (2).png"
+        alt="Dashboard preview"
+        className="max-w-full rounded-[16px]"
+      />
+    </div>
 </div>
 
-{/* HERO */}
-<div style={{ textAlign: "center", padding: "96px 24px 0", maxWidth: 1280, margin: "0 auto" }}>
-<div style={{ fontSize: 16, fontWeight: 600, color: "#2563EB" }}>Since 2012</div>
-<h1 style={{ fontSize: 48, fontWeight: 700, lineHeight: "56px", margin: "24px 0", color: "#FAFAFA" }}>
-Your gateway to <span style={{ color: "#2563EB" }}>algorithmic</span> capital management
-</h1>
-<p style={{ fontSize: 18, color: "#A1A1AA", maxWidth: 672, margin: "0 auto 32px" }}>
-Professional technology for traders, companies, and long-term capital strategies.
-</p>
-<div style={{ backgroundColor: "#2563EB", borderRadius: 6, padding: "8px 16px", fontSize: 14, fontWeight: 500, color: "white", display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer" }}>
-Get started
-<div style={{ width: 12, height: 12, borderTop: "2px solid white", borderRight: "2px solid white", transform: "rotate(45deg)" }}></div>
-</div>
-</div>
-
-{/* Dashboard Image */}
-<div style={{ display: "flex", justifyContent: "center", padding: "64px 24px" }}>
-<img
-src="/image (2).png"
-alt="dashboard preview"
-style={{ maxWidth: 1200, width: "100%", borderRadius: 16 }}
-/>
-</div>
-</div>
 );
 };
 
-export default HeroWithNavbar;
+export default Hero;
