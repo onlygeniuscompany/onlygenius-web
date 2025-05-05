@@ -4,7 +4,7 @@ import React from "react";
 export default function Hero() {
 return (
 <div className="bg-[#09090B] text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen">
-  <div className="max-w-[1280px] mx-auto px-4 w-[90%]">
+  <div className="max-w-[1280px] mx-auto px-4 ">
 
     {/* Hero Section */}
     <div className="text-center py-[25px]">
