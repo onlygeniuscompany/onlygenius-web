@@ -3,7 +3,7 @@ import Landing from "./pages/Landing";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 import Foot from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.jsx";
 import FAQ from "./pages/FAQ";
 
 function App() {
