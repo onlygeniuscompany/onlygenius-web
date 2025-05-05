@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Navbar () {
+export default function NavbarComp () {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -51,12 +51,12 @@ export default function Navbar () {
               {item}
             </div>
           ))}
+          <a href="https://calendly.com/onlygenius-support/30min"></a>
           <div className="mt-4 bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium text-center cursor-pointer">
-            Client area
+            Contacto
           </div>
         </div>
       )}
     </div>
   );
 };
-
