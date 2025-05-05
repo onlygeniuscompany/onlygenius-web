@@ -52,81 +52,37 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div
-      style={{
-        backgroundColor: "#09090B",
-        color: "#FAFAFA",
-        fontFamily: "Inter, sans-serif",
-        padding: "96px 24px",
-        maxWidth: 1280,
-        margin: "0 auto",
-      }}
-    >
-      <div style={{ textAlign: "center", marginBottom: 64 }}>
-        <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 600 }}>Preguntas frecuentes</div>
-        <h2 style={{ fontSize: 36, fontWeight: 700, margin: "12px 0" }}>
-          Respuestas a tus dudas
-        </h2>
-        <p style={{ color: "#A1A1AA", fontSize: 16 }}>
-          ¿Tenés preguntas? Estamos para ayudarte.
-        </p>
-      </div>
-
-      <div style={{ maxWidth: 720, margin: "0 auto" }}>
-        {faqs.map((faq, idx) => (
-          <div key={idx} style={{ borderBottom: "1px solid #27272A", padding: "16px 0" }}>
-            <div
-              onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                cursor: "pointer",
-                fontWeight: 500,
-                fontSize: 16,
-              }}
-            >
-              {faq.question}
-              <span style={{ transform: openIndex === idx ? "rotate(180deg)" : "rotate(0deg)" }}>
-                ▼
-              </span>
-            </div>
-            {openIndex === idx && (
-              <p style={{ marginTop: 8, color: "#A1A1AA", fontSize: 14 }}>{faq.answer}</p>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div
-        style={{
-          marginTop: 64,
-          backgroundColor: "#18181B",
-          padding: "32px",
-          borderRadius: 12,
-          textAlign: "center",
-        }}
-      >
-        <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 12 }}>
-          ¿Todavía tenés preguntas?
-        </h3>
-        <p style={{ fontSize: 14, color: "#A1A1AA", marginBottom: 16 }}>
-          Si necesitás ayuda, nuestro equipo está listo para asistirte.
-        </p>
-        <button
-          style={{
-            backgroundColor: "#2563EB",
-            color: "white",
-            padding: "8px 16px",
-            borderRadius: 6,
-            fontWeight: 500,
-            fontSize: 14,
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Contactanos
-        </button>
-      </div>
+    <div id="faqs" className="bg-[#09090B] text-[#FAFAFA] font-inter px-6 py-24 max-w-[1280px] mx-auto">
+    <div className="text-center mb-16">
+      <div className="text-[#2563EB] text-[14px] font-semibold">Preguntas frecuentes</div>
+      <h2 className="text-[36px] font-bold my-3">Respuestas a tus dudas</h2>
+      <p className="text-[#A1A1AA] text-[16px]">¿Tenés preguntas? Estamos para ayudarte.</p>
     </div>
+
+    <div className="max-w-[720px] mx-auto">
+      {faqs.map((faq, idx) => (
+        <div key={idx} className="border-b border-[#27272A] py-4">
+          <div
+            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+            className="flex justify-between cursor-pointer font-medium text-[16px]"
+          >
+            {faq.question}
+            <span className={openIndex === idx ? "rotate-180" : "rotate-0"}>▼</span>
+          </div>
+          {openIndex === idx && (
+            <p className="mt-2 text-[#A1A1AA] text-[14px]">{faq.answer}</p>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-16 bg-[#18181B] p-8 rounded-xl text-center">
+      <h3 className="text-[18px] font-semibold mb-3">¿Todavía tenés preguntas?</h3>
+      <p className="text-[14px] text-[#A1A1AA] mb-4">Si necesitás ayuda, nuestro equipo está listo para asistirte.</p>
+      <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md font-medium text-[14px] border-none cursor-pointer">
+        Contactanos
+      </button>
+    </div>
+  </div>
   );
 }
