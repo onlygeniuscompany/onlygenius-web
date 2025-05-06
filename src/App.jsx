@@ -8,6 +8,8 @@ import FAQ from "./pages/FAQ";
 import NavbarComp from "./components/NavbarComp.jsx";
 import Services from "./pages/Services.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />        
         <Route path="/services" element={<Services />} />       
         <Route path="/afiliados" element={<Affiliates />} />        
+        <Route path="/nosotros" element={<AboutUs />} />        
         {/* <Route path="/about" element={<About />} />  Acerca de */}
         {/* <Route path="/contact" element={<Contact />} /> Contacto */}
       </Routes>

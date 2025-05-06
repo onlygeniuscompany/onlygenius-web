@@ -8,7 +8,7 @@ export default function NavbarComp () {
     {name:'Algoritmos',to:''},
     {name:'Programa de afiliados',to:'afiliados'},
     {name:'FAQs',to:'faq'},
-    {name:'Partners',to:''},
+    {name:'Nosotros',to:'nosotros'},
   ];
 
   return (
