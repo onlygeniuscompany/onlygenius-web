@@ -2,7 +2,7 @@ import React from "react";
 
 const CompatibilitySection = () => {
   return (
-<div className="w-full px-6 py-24 bg-[#09090B] flex flex-col items-center gap-16">
+<div className="w-full px-6 py-24  flex flex-col items-center gap-16">
       <div className="w-full max-w-[1280px] flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
         {/* Text + Cards */}
         <div className="flex flex-col gap-8 z-20 flex-1">

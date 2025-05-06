@@ -2,7 +2,7 @@ import React from "react";
 
 const GlobalReach = () => {
   return (
-    <div className="bg-[#09090B] text-[#FAFAFA] px-6 py-24 text-center font-inter max-w-[1280px] mx-auto">
+    <div className=" text-[#FAFAFA] px-6 py-24 text-center font-inter max-w-[1280px] mx-auto">
       <div className="text-[#2563EB] text-[14px] font-semibold mb-4">Alcance global</div>
       <h2 className="text-[24px] font-bold leading-[1.3] mb-4">
         Ya trabajamos con<br />clientes en más de 10 países

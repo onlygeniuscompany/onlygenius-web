@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Foot = () =>{
-    return (<footer className="bg-[#09090B] text-[#A1A1AA] font-inter px-6 pt-16 pb-8 flex flex-col gap-12">
+    return (<footer className=" text-[#A1A1AA] font-inter px-6 pt-16 pb-8 flex flex-col gap-12">
         <div className="max-w-[1200px] mx-auto flex flex-wrap justify-between gap-12">
           {/* Left section */}
           <div className="flex-1 min-w-[240px]">

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function WhyWeExist() {
   return (
-    <section className="w-full bg-black text-white py-20 px-6">
+    <section className="w-full  text-white py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Texto */}
         <div className="flex-1 space-y-4">

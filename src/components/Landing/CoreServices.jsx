@@ -28,7 +28,7 @@ const CoreServices = () => {
         }].map(({ title, desc, img }, idx) => (
             <div
             key={idx}
-            className="flex flex-col items-start justify-start gap-6 p-6 bg-[#09090B] border border-[#27272A] rounded-xl min-w-[280px] flex-1"
+            className="flex flex-col items-start justify-start gap-6 p-6  border border-[#27272A] rounded-xl min-w-[280px] flex-1"
             >
             <img src={img} alt="" className="w-12 h-12 rounded-lg" />
             <div className="flex flex-col gap-3">

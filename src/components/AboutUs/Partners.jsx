@@ -13,7 +13,7 @@ const partners = [
  
 export default function PartnersSection() {
   return (
-    <section className="w-full bg-black text-white py-20 px-6">
+    <section className="w-full  text-white py-20 px-6">
       <div className="max-w-6xl mx-auto text-center space-y-6">
         <h2 className="text-3xl font-bold">Con Quiénes Trabajamos</h2>
         <p className="text-white/70 max-w-2xl mx-auto">

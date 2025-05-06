@@ -27,7 +27,7 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section className="flex items-center justify-center w-full bg-black text-white py-24 px-6">
+    <section className="flex items-center justify-center w-full  text-white py-24 px-6">
       <div className="max-w-6xl mx-auto text-center space-y-4">
         <h2 className="text-3xl font-bold">Conocé a nuestro equipo</h2>
         <p className="text-white/70 max-w-2xl mx-auto">

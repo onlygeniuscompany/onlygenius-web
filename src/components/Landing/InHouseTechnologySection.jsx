@@ -3,7 +3,7 @@ import React from "react";
 
 const InHouseTechnologySection = () => {
     return (
-       <div className="bg-[#09090B] px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center">
+       <div className=" px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center">
       <div className="w-full max-w-[1280px] flex flex-col lg:flex-row justify-between gap-16 items-center">
         <div className="flex-1 flex flex-col gap-6">
           <div className="text-[#3B82F6] text-[14px] font-semibold">Tecnología Propia</div>

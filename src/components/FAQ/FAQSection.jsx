@@ -52,7 +52,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div id="faqs" className="bg-[#09090B] text-[#FAFAFA] font-inter px-6 py-24 max-w-[1280px] mx-auto">
+    <div id="faqs" className=" text-[#FAFAFA] font-inter px-6 py-24 max-w-[1280px] mx-auto">
     <div className="text-center mb-16">
       <div className="text-[#2563EB] text-[14px] font-semibold">Preguntas frecuentes</div>
       <h2 className="text-[36px] font-bold my-3">Respuestas a tus dudas</h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AffiliateProgram() {
   return (
-    <section className="w-full bg-black text-white py-24 px-6 md:px-12">
+    <section className="w-full  text-white py-24 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm text-blue-500 mb-2">Programa de afiliados</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">

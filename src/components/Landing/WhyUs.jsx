@@ -42,7 +42,7 @@ const rows = [
     },
   ];
 const WhyUs = ()=>{
-    return (<div className="bg-[#09090B] px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center gap-12">
+    return (<div className=" px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center gap-12">
       <div className="text-center max-w-[800px]">
         <div className="text-[#2563EB] text-[14px] font-semibold">Por qué elegirnos</div>
         <h2 className="text-[32px] font-bold my-4">¿Por qué elegir OnlyGenius?</h2>
@@ -64,7 +64,7 @@ const WhyUs = ()=>{
             {rows.map(({ feature, onlyGenius, others }, index) => (
               <tr
                 key={feature}
-                className={`${index % 2 === 0 ? 'bg-[#101012]' : 'bg-[#09090B]'}`}
+                className={`${index % 2 === 0 ? 'bg-[#101012]' : ''}`}
               >
                 <td className="py-4 px-6 text-[#FAFAFA]">{feature}</td>
                 <td className="py-4 px-6 text-[#FAFAFA]">{onlyGenius}</td>

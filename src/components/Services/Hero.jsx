@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ServicesSection() {
   return (
-    <section className="w-full bg-black text-white py-24 px-6 md:px-12">
+    <section className="w-full  text-white py-24 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         {/* Intro */}
         <p className="text-sm text-blue-500 font-medium">Servicios</p>

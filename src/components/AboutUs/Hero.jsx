@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <section className="w-full px-6 py-24 md:px-12 text-center bg-black text-white">
+    <section className="w-full px-6 py-24 md:px-12 text-center  text-white">
       <div className="max-w-4xl mx-auto">
         <p className="text-sm text-[#2563EB] font-medium mb-4">
           Sobre OnlyGenius
