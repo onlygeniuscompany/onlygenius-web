@@ -79,9 +79,11 @@ export default function FAQSection() {
     <div className="mt-16 bg-[#18181B] p-8 rounded-xl text-center">
       <h3 className="text-[18px] font-semibold mb-3">¿Todavía tenés preguntas?</h3>
       <p className="text-[14px] text-[#A1A1AA] mb-4">Si necesitás ayuda, nuestro equipo está listo para asistirte.</p>
+      <a href="https://calendly.com/onlygenius-support/30min">
       <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md font-medium text-[14px] border-none cursor-pointer">
         Contactanos
       </button>
+      </a>
     </div>
   </div>
   );

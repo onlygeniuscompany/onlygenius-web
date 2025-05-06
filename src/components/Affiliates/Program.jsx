@@ -11,9 +11,11 @@ export default function AffiliateProgram() {
         <p className="text-gray-400 mb-6">
           Referí nuestros servicios de forma profesional y recibí comisiones recurrentes.
         </p>
+        <a href="https://calendly.com/onlygenius-support/30min">
         <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
           Postularse al programa de afiliados
         </button>
+        </a>
       </div>
 
       {/* Sección "Cómo funciona" */}

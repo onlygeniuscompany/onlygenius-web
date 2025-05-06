@@ -28,9 +28,11 @@ export default function CustomBotDevelopment() {
               </li>
             ))}
           </ul>
+          <a href="https://calendly.com/onlygenius-support/30min">
           <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
             Reservar llamada →
           </button>
+          </a>
         </div>
 
         {/* Derecha: Imagen del robot */}

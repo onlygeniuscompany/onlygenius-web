@@ -6,11 +6,13 @@ const Foot = () =>{
         <div className="max-w-[1200px] mx-auto flex flex-wrap justify-between gap-12">
           {/* Left section */}
           <div className="flex-1 min-w-[240px]">
+            <a href="/">
             <img src="/White.png" alt="ONLYGENIUS" className="w-[180px] mb-6" />
+            </a>
             <p className="text-[14px] max-w-[280px]">
               Professional algorithmic capital management for traders, companies, and long-term strategies.
             </p>
-            <div className="flex gap-4 mt-4">
+            {/* <div className="flex gap-4 mt-4">
               {["telegram", "instagram", "facebook", "x"].map((platform, i) => (
                 <img
                   key={i}
@@ -19,7 +21,7 @@ const Foot = () =>{
                   className="w-5 h-5 cursor-pointer"
                 />
               ))}
-            </div>
+            </div> */}
           </div>
   
           {/* Center links */}
@@ -27,17 +29,17 @@ const Foot = () =>{
             <div>
               <h4 className="text-[#FAFAFA] text-[14px] font-semibold mb-3">Company</h4>
               <div className="flex flex-col gap-2 text-[14px]">
-                <a href="https://www.onlygenius.es/">Services</a>
-                <a href="https://www.onlygenius.es/">Contact</a>
+                <a href="/services">Services</a>
+                <a href="/https://calendly.com/onlygenius-support/30min">Contact</a>
               </div>
             </div>
             <div>
               <h4 className="text-[#FAFAFA] text-[14px] font-semibold mb-3">Support</h4>
               <div className="flex flex-col gap-2 text-[14px]">
-                <a href="https://www.onlygenius.es/">Help center</a>
-                <a href="https://www.onlygenius.es/">Documentation</a>
-                <a href="https://www.onlygenius.es/">FAQs</a>
-                <a href="https://www.onlygenius.es/">Contact support</a>
+                <a href="/https://calendly.com/onlygenius-support/30min">Help center</a>
+                <a href="/faq">Documentation</a>
+                <a href="/faq">FAQs</a>
+                <a href="/https://calendly.com/onlygenius-support/30min">Contact support</a>
               </div>
             </div>
           </div>
@@ -65,9 +67,8 @@ const Foot = () =>{
         <div className="max-w-[1200px] mx-auto flex justify-between flex-wrap text-[12px] border-t border-[#27272A] pt-6 gap-4">
           <span>© 2050 ONLYGENIUS. All rights reserved.</span>
           <div className="flex gap-4">
-            <a href="https://www.onlygenius.es/">Terms</a>
-            <a href="https://www.onlygenius.es/">Cookies</a>
-            <a href="https://www.onlygenius.es/">Cookies</a>
+            <a href="/faq">Terms</a>
+            <a href="/faq">Cookies</a>
           </div>
         </div>
       </footer>)
