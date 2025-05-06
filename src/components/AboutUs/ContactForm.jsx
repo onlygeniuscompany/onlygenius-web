@@ -6,10 +6,10 @@ export default function ContactForm() {
     <section className="w-full bg-black text-white py-20 px-6">
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-blue-500">Contact us</p>
-          <h2 className="text-3xl font-bold">Get in touch</h2>
+          <p className="text-blue-500">Contacto</p>
+          <h2 className="text-3xl font-bold">Ponete en contacto</h2>
           <p className="text-white/70 mt-2">
-            We’d love to hear from you. Please fill out this form.
+            Nos encantaría saber de vos. Completá este formulario.
           </p>
         </div>
 
@@ -17,19 +17,19 @@ export default function ContactForm() {
           <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="text"
-              placeholder="First name"
+              placeholder="Nombre"
               className="flex-1 px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
             />
             <input
               type="text"
-              placeholder="Last name"
+              placeholder="Apellido"
               className="flex-1 px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
             />
           </div>
 
           <input
             type="email"
-            placeholder="you@company.com"
+            placeholder="tucorreo@empresa.com"
             className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
           />
 
@@ -41,16 +41,16 @@ export default function ContactForm() {
 
           <textarea
             rows="5"
-            placeholder="Leave us a message..."
+            placeholder="Dejanos tu mensaje..."
             className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
           />
 
           <div className="flex items-start gap-2 text-sm">
             <input type="checkbox" id="privacy" className="mt-1" />
             <label htmlFor="privacy">
-              You agree to our friendly{" "}
+              Aceptás nuestra{" "}
               <a href="#" className="text-blue-500 underline">
-                privacy policy
+                política de privacidad
               </a>
               .
             </label>
@@ -60,7 +60,7 @@ export default function ContactForm() {
             type="submit"
             className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition"
           >
-            Send message
+            Enviar mensaje
           </button>
         </form>
       </div>

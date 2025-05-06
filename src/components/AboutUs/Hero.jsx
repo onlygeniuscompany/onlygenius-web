@@ -6,17 +6,13 @@ export default function AboutSection() {
     <section className="w-full px-6 py-24 md:px-12 text-center bg-black text-white">
       <div className="max-w-4xl mx-auto">
         <p className="text-sm text-[#2563EB] font-medium mb-4">
-          About OnlyGenius
+          Sobre OnlyGenius
         </p>
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-          Empowering Traders with Smart,<br /> Seamless Automation
+          Potenciamos Traders con Automatización<br /> Inteligente y Sin Fricciones
         </h2>
         <p className="text-base text-gray-300 leading-relaxed">
-          At OnlyGenius, we believe in making intelligent trading accessible to
-          everyone — from aspiring retail traders to experienced professionals
-          managing prop firm accounts. Our mission is simple: to equip you with
-          cutting-edge, in-house-built trading algorithms that work for you,
-          around the clock.
+          En OnlyGenius, creemos en hacer que el trading inteligente sea accesible para todos — desde traders minoristas que recién comienzan hasta profesionales con cuentas fondeadas en prop firms. Nuestra misión es simple: darte acceso a algoritmos de trading de última generación, desarrollados internamente, que trabajen para vos las 24 horas.
         </p>
       </div>
     </section>

@@ -1,23 +1,23 @@
 // src/components/FeaturesGrid.jsx
-import { BarChart2, RefreshCw, Sliders, Users } from "lucide-react"; // o cualquier ícono que prefieras
+import { BarChart2, RefreshCw, Sliders, Users } from "lucide-react";
 import React from "react";
 
 const features = [
   {
     icon: <RefreshCw className="text-blue-500 w-6 h-6" />,
-    text: "Automated Trading Algorithms compatible with leading prop firms and brokers",
+    text: "Algoritmos de trading automatizados compatibles con los principales brokers y prop firms",
   },
   {
     icon: <BarChart2 className="text-blue-500 w-6 h-6" />,
-    text: "Real-Time Account Monitoring across MT4, MT5, cTrader, and more",
+    text: "Monitoreo de cuentas en tiempo real en MT4, MT5, cTrader y más",
   },
   {
     icon: <Sliders className="text-blue-500 w-6 h-6" />,
-    text: "Customizable Strategies designed to suit individual risk profiles",
+    text: "Estrategias personalizables diseñadas según perfiles de riesgo individuales",
   },
   {
     icon: <Users className="text-blue-500 w-6 h-6" />,
-    text: "Affiliate Opportunities so you can grow with us and earn along the way",
+    text: "Oportunidades de afiliación para que crezcas con nosotros y generes ingresos",
   },
 ];
 

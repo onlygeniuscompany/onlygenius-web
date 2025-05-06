@@ -4,50 +4,42 @@ import React from "react";
 const team = [
   {
     name: "Alex García",
-    role: "Founder & CEO",
-    description: "Founder & CEO at OnlyGenius. Lorem ipsum doal sign.",
-    image: "/team/alex.jpg", // asegurate de tener estas imágenes en /public/team/
+    role: "Fundador & CEO",
+    description: "Fundador y CEO de OnlyGenius.",
+    image: "/alex.jpg",
     color: "text-blue-500",
   },
   {
-    name: "Amélie Laurent",
-    role: "HR Operations",
-    description: "Founder & CEO at OnlyGenius. Lorem ipsum doal sign.",
-    image: "/team/amelie.jpg",
-    color: "text-pink-400",
-  },
-  {
-    name: "Umar Noah",
-    role: "Programmer",
-    description: "Founder & CEO at OnlyGenius. Lorem ipsum doal sign.",
-    image: "/team/umar.jpg",
+    name: "Ivan Serralta",
+    role: "IT",
+    description: "Desarrollador en OnlyGenius.",
+    image: "/ivan.jpeg",
     color: "text-purple-400",
   },
   {
     name: "Nasir Ali",
-    role: "Product Designer",
-    description: "Founder & CEO at OnlyGenius. Lorem ipsum doal sign.",
-    image: "/team/nasir.jpg",
+    role: "Diseñador de Producto",
+    description: "Diseñador de productos en OnlyGenius.",
+    image: "/nasir.jpg",
     color: "text-blue-400",
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-black text-white py-24 px-6">
+    <section className="flex items-center justify-center w-full bg-black text-white py-24 px-6">
       <div className="max-w-6xl mx-auto text-center space-y-4">
-        <h2 className="text-3xl font-bold">Meet our team</h2>
+        <h2 className="text-3xl font-bold">Conocé a nuestro equipo</h2>
         <p className="text-white/70 max-w-2xl mx-auto">
-          Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do your best work.
+          Nuestra filosofía es simple: formar un equipo diverso y apasionado, y fomentar una cultura que te impulse a dar lo mejor de vos.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+        <div className="items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {team.map((member, idx) => (
-            <div key={idx} className="space-y-3 text-left">
-              <img src={member.image} alt={member.name} className="w-full rounded-md object-cover" />
-              <div className="font-semibold">{member.name}</div>
-              <div className={member.color + " text-sm font-medium"}>{member.role}</div>
-              <p className="text-sm text-white/70">{member.description}</p>
+            <div key={idx} className="flex flex-col items-center space-y-3">
+            <img src={member.image} alt={member.name} className="h-50 w-40 object-cover rounded-md" />
+            <div className={member.color + " text-sm font-medium"}>{member.role}</div>
+            <p className="text-sm text-white/70 text-center">{member.description}</p>
             </div>
           ))}
         </div>
