@@ -56,10 +56,11 @@ export default function NavbarComp () {
             </div>
           </a>
           ))}
-          <a href="https://www.dashboard.onlygenius.es"></a>
+          <a href="https://www.dashboard.onlygenius.es">
           <div className="mt-4 bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium text-center cursor-pointer">
           Area del cliente
           </div>
+          </a>
         </div>
       )}
     </div>
