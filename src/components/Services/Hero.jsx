@@ -1,8 +1,9 @@
-import React from "react";
-
-export default function ServicesSection() {
+import React, { useState } from "react";
+export default function ServicesSection({Modal}) {
+  const [open,setOpen] = useState(false)
   return (
     <section className="w-full  text-white py-24 px-6 md:px-12">
+
       <div className="max-w-6xl mx-auto">
         {/* Intro */}
         <p className="text-sm text-blue-500 font-medium">Servicios</p>
@@ -44,12 +45,16 @@ export default function ServicesSection() {
               Reservar llamada →
             </button>
              </a>
+             <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition" onClick={()=>setOpen(true)} >
+              Empezar
+            </button>
           </div>
 
           {/* Derecha: Imagen */}
           <img src="/image (5).png" alt="Gráficos y logotipos" className="max-w-[500px] min-w-[280px]" />
         </div>
       </div>
+      <Modal open={open} onClose={()=>setOpen(false)}/>
     </section>
   );
 }
