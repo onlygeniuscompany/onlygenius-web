@@ -34,14 +34,13 @@ export default function NavbarComp () {
 
       <div className="hidden md:flex justify-center gap-8 pb-4">
         {navItems.map((item,i) => (
-          <a href={item.to} key={i}>
-          <div
-            key={i}
-            className="text-[14px] font-medium text-[#E4E4E7] cursor-pointer"
-          >
-            {item.name}
-          </div>
-          </a>
+          <a
+              key={i}
+              href={item.to}
+              className="text-[14px] font-medium cursor-pointer transition-colors duration-200"
+            >
+              {item.name}
+            </a>
         ))}
       </div>
 
@@ -51,7 +50,7 @@ export default function NavbarComp () {
           <a href={item.to} key={i}>
             <div
               key={i}
-              className="text-[16px] font-medium text-[#E4E4E7] cursor-pointer"
+              className="text-[16px] font-medium cursor-pointer"
             >
               {item.name}
             </div>
