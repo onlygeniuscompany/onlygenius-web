@@ -10,7 +10,7 @@ return (
     <div className="text-center py-[25px]">
       <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2012</div>
       <h1 className="text-[clamp(35px,6vw,48px)] font-bold leading-[56px] my-[10px]">
-      Estrategias que trabajan mientras vos <span className="text-[#2563EB]">descansás</span>.
+      Gestión algorítmica de capital,  <span className="text-[#2563EB]">sin complicaciones.</span>
       </h1>
       <p className="text-[16px] text-[#A1A1AA] max-w-[672px] mx-auto mb-[25px]">
         Tecnología profesional para traders, empresas y estrategias de capital a largo plazo.
