@@ -14,7 +14,14 @@ const team = [
     role: "IT",
     description: "Desarrollador en OnlyGenius.",
     image: "/ivan.jpeg",
-    color: "text-purple-400",
+    color: "text-blue-500",
+  },
+  {
+    name: "OM",
+    role: "IT",
+    description: "Desarrollador en OnlyGenius.",
+    image: "/OM.jpeg",
+    color: "text-blue-500",
   },
   {
     name: "Nasir Ali",
@@ -34,7 +41,7 @@ export default function TeamSection() {
           Nuestra filosofía es simple: formar un equipo diverso y apasionado, y fomentar una cultura que te impulse a dar lo mejor de vos.
         </p>
 
-        <div className="items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div className="items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {team.map((member, idx) => (
             <div key={idx} className="flex flex-col items-center space-y-3">
             <img src={member.image} alt={member.name} className="h-50 w-40 object-cover rounded-md" />
