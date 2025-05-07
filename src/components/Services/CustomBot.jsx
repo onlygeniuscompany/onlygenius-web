@@ -10,7 +10,7 @@ export default function CustomBotDevelopment() {
             Desarrollo de Bots de Trading Personalizados
           </h3>
           <p className="text-gray-400 mb-6 max-w-lg">
-            ¿Ya tenés una estrategia manual o semi-automatizada que funciona? La convertimos en un
+            ¿Ya tienes una estrategia manual o semi-automatizada que funciona? La convertimos en un
             bot de trading totalmente funcional, desarrollado a medida para operar en MT4, MT5 o cTrader.
             Desde traders individuales hasta estrategias institucionales, ofrecemos soluciones de automatización adaptadas
             para llevar tu trading al siguiente nivel.
