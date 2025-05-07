@@ -19,7 +19,7 @@ const TrustedBy =()=>{
           }, {
             title: "Traders minoristas",
             desc: "Ideal para gestionar cuentas financiadas o personales sin necesidad de conocimientos técnicos.",
-            icon: "🛍️",
+            icon: "👨‍💻",
             iconBg: "bg-[#0C0C0E]",
           }].map(({ title, desc, icon, iconBg }, idx) => (
             <div
