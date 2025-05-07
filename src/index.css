@@ -1,14 +1,14 @@
 @import "tailwindcss";
 /* GLOBAL STYLES */
-html, body {
+/* html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #09090B; /* color base oscuro */
+  background-color: #09090B; 
   color: #FAFAFA;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-}
+} */
 
 /* ROOT: estilos generales y accesibilidad */
 :root {

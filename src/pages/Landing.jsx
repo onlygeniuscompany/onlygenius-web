@@ -14,8 +14,22 @@ import WhatWeDo from "../components/Landing/WhatWeDo";
 
 export default function Landing() {
   return (
-    <div className="bg-[radial-gradient(circle_at_20%_30%,#2e2e2e_0%,transparent_40%),radial-gradient(circle_at_70%_60%,#1f1f1f_0%,transparent_50%),radial-gradient(circle_at_50%_50%,#3a3a3a_0%,#0a0a0a_50%)]  text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen">
-      <div className="max-w-[1280px] mx-auto px-4 w-[90%]">
+<div className="bg-[#09090B] text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen relative">
+  <div
+    className="absolute inset-0 z-0 pointer-events-none"
+    style={{
+      backgroundImage: `
+        radial-gradient(circle at 20% 30%, #2e2e2e 0%, transparent 40%),
+        radial-gradient(circle at 70% 60%, #1f1f1f 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, #3a3a3a 0%, transparent 60%),
+        radial-gradient(circle at 10% 80%, #222 0%, transparent 45%),
+        radial-gradient(circle at 80% 20%, #1a1a1a 0%, transparent 50%),
+        radial-gradient(circle at 60% 90%, #2d2d2d 0%, transparent 50%)
+      `
+    }}
+  />
+
+  <div className="relative z-10 max-w-[1280px] mx-auto px-4 w-[90%]">
         <Hero/>
         <CoreServices/>
         <CompatibilitySection/>

@@ -27,7 +27,7 @@ export default function NavbarComp () {
         </a>
         <a href="https://www.dashboard.onlygenius.es">
         <div className="hidden md:block bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium whitespace-nowrap cursor-pointer">
-        Client area
+        Area del cliente
         </div>
         </a>
       </div>
@@ -58,7 +58,7 @@ export default function NavbarComp () {
           ))}
           <a href="https://www.dashboard.onlygenius.es"></a>
           <div className="mt-4 bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium text-center cursor-pointer">
-            Client area
+          Area del cliente
           </div>
         </div>
       )}
