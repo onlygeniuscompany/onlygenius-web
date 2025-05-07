@@ -6,6 +6,7 @@ import Hero from "../components/Landing/Hero";
 import InHouseTechnologySection from "../components/Landing/InHouseTechnologySection";
 import TrustedBy from "../components/Landing/TrustedBy";
 import WhyUs from "../components/Landing/WhyUs";
+import WhatWeDo from "../components/Landing/WhatWeDo";
 
 
 
@@ -18,6 +19,7 @@ export default function Landing() {
         <Hero/>
         <CoreServices/>
         <CompatibilitySection/>
+        <WhatWeDo/>
         <TrustedBy/>
         <GlobalReach/>
         <WhyUs/>

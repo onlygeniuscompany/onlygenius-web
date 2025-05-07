@@ -8,14 +8,13 @@ export default function WhatWeDo() {
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Lo Que Hacemos</h2>
         <p className="text-sm text-gray-400 mb-10">Nos especializamos en:</p>
         <div className="aspect-w-16 aspect-h-9">
-          <video
-            controls
-            className="w-full rounded-xl border border-gray-700"
-            poster="/video-thumbnail.png"
-          >
-            <source src="/axi-video.mp4" type="video/mp4" />
-            Tu navegador no admite la etiqueta de video.
-          </video>
+        <iframe
+          src="https://www.youtube.com/embed/2TPKmfezuDw"
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full aspect-video rounded-xl border border-gray-700"
+        />
         </div>
       </div>
     </section>
