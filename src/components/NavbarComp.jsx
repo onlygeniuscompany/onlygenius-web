@@ -25,9 +25,9 @@ export default function NavbarComp () {
         <a href="/">
           <img src="/White.png" alt="OnlyGenius Logo" className="h-[14px]" />
         </a>
-        <a href="https://calendly.com/onlygenius-support/30min">
+        <a href="https://www.dashboard.onlygenius.es">
         <div className="hidden md:block bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium whitespace-nowrap cursor-pointer">
-        Contacto
+        Client area
         </div>
         </a>
       </div>
@@ -56,9 +56,9 @@ export default function NavbarComp () {
             </div>
           </a>
           ))}
-          <a href="https://calendly.com/onlygenius-support/30min"></a>
+          <a href="https://www.dashboard.onlygenius.es"></a>
           <div className="mt-4 bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium text-center cursor-pointer">
-            Contacto
+            Client area
           </div>
         </div>
       )}

@@ -17,37 +17,66 @@ export default function PerformanceAccessModal({ open, onClose }) {
           </button>
         </div>
 
-        {/* Description */}
         <p className="text-sm text-[#A1A1AA] mb-6">This is a dialog description.</p>
 
-        {/* Form */}
-        <form className="space-y-4">
-          <input
-            type="text"
-            placeholder="Enter your first name"
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
-          />
-          <input
-            type="text"
-            placeholder="Enter your last name"
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
-          />
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
-          />
-          <select
-            defaultValue=""
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
-          >
-            <option value="" disabled>e.g (prop firm / broker / other)</option>
-            <option value="prop">Prop Firm</option>
-            <option value="broker">Broker</option>
-            <option value="other">Other</option>
-          </select>
+        <form
+          className="space-y-4 text-left"
+          action="https://formsubmit.co/el/kulasa"
+          method="POST"
+        >
+          {/* Hidden input to disable captcha */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value={typeof window !== "undefined" ? window.location.href : ""} />
 
-          {/* Action buttons */}
+          <div>
+            <label className="block text-sm text-[#E4E4E7] mb-1">First name</label>
+            <input
+              name="first_name"
+              type="text"
+              required
+              placeholder="Enter your first name"
+              className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-[#E4E4E7] mb-1">Last name</label>
+            <input
+              name="last_name"
+              type="text"
+              required
+              placeholder="Enter your last name"
+              className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-[#E4E4E7] mb-1">Email</label>
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm placeholder-[#52525B]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-[#E4E4E7] mb-1">Type of account</label>
+            <select
+              name="account_type"
+              required
+              defaultValue=""
+              className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
+            >
+              <option value="" disabled>e.g (prop firm / broker / other)</option>
+              <option value="prop">Prop Firm</option>
+              <option value="broker">Broker</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          {/* Buttons */}
           <div className="flex justify-between pt-4">
             <button
               type="button"

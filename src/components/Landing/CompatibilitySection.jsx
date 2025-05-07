@@ -1,8 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const CompatibilitySection = () => {
+const platforms = [
+  {
+    name: "MetaTrader 4",
+    icon: "/MT4 Logo mark.png",
+    image: "/MT4.png",
+    description:
+      "Conectá tu cuenta de MT4 y automatizá tu estrategia usando nuestros algoritmos sin intervención manual.",
+  },
+  {
+    name: "MetaTrader 5",
+    icon: "/MT5 Logo mark.png",
+    image: "/MT5.png",
+    description:
+      "Nuestra integración con MT5 permite monitoreo avanzado, múltiples órdenes y ejecución optimizada.",
+  },
+  {
+    name: "cTrader",
+    icon: "/cTrader mark.png",
+    image: "/cTraderPC.png",
+    description:
+      "Operá con cTrader y aprovechá las funcionalidades de trading institucional que ofrecemos.",
+  },
+];
+
+export default function CompatibilitySection() {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % platforms.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-<div className="w-full px-6 py-24  flex flex-col items-center gap-16">
+    <div className="w-full px-6 py-24 flex flex-col items-center gap-16">
       <div className="w-full max-w-[1280px] flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
         {/* Text + Cards */}
         <div className="flex flex-col gap-8 z-20 flex-1">
@@ -16,29 +49,13 @@ const CompatibilitySection = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            {[
-              {
-                name: 'MetaTrader 4',
-                active: false,
-                icon: '/MT4 Logo mark.png',
-                description: 'Conectá tu cuenta de MT4 y automatizá tu estrategia usando nuestros algoritmos sin intervención manual.'
-              },
-              {
-                name: 'MetaTrader 5',
-                active: true,
-                icon: '/MT5 Logo mark.png',
-                description: 'Nuestra integración con MT5 permite monitoreo avanzado, múltiples órdenes y ejecución optimizada.'
-              },
-              {
-                name: 'cTrader',
-                active: false,
-                icon: '/cTrader mark.png',
-                description: 'Operá con cTrader y aprovechá las funcionalidades de trading institucional que ofrecemos.'
-              },
-            ].map(({ name, active, icon, description }) => (
+            {platforms.map(({ name, icon, description }, i) => (
               <div
                 key={name}
-                className={`p-4 lg:px-6 border rounded-lg flex flex-col gap-3 ${active ? 'border-[#2563EB] bg-[#18181B]' : 'border-[#27272A]'}`}
+                onClick={() => setActiveIndex(i)}
+                className={`p-4 lg:px-6 border rounded-lg flex flex-col gap-3 cursor-pointer transition-colors duration-300 ${
+                  activeIndex === i ? "border-[#2563EB] bg-[#18181B]" : "border-[#27272A]"
+                }`}
               >
                 <div className="flex items-center gap-3">
                   <img src={icon} alt={`${name} icon`} className="w-6 h-6" />
@@ -52,15 +69,12 @@ const CompatibilitySection = () => {
         {/* Image */}
         <div className="flex-1 relative w-full max-w-[600px] min-w-[280px]">
           <img
-            src="/3_2 screen mockup.png"
-            alt="Trading platform"
-            className="w-full h-auto rounded-xl"
+            src={platforms[activeIndex].image}
+            alt={platforms[activeIndex].name}
+            className="w-full h-auto rounded-xl transition-opacity duration-500"
           />
         </div>
       </div>
     </div>
-
   );
-};
-
-export default CompatibilitySection;
+}
