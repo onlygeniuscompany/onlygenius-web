@@ -9,10 +9,10 @@ export default function AboutSection() {
           Sobre OnlyGenius
         </p>
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
-          Potenciamos Traders con Automatización<br /> Inteligente y Sin Fricciones
+        Potenciamos a traders con automatización<br /> Inteligencia + escalabilidad.
         </h2>
         <p className="text-base text-gray-300 leading-relaxed">
-          En OnlyGenius, creemos en hacer que el trading inteligente sea accesible para todos — desde traders minoristas que recién comienzan hasta profesionales con cuentas fondeadas en prop firms. Nuestra misión es simple: darte acceso a algoritmos de trading de última generación, desarrollados internamente, que trabajen para vos las 24 horas.
+          En OnlyGenius, creemos en hacer que el trading inteligente sea accesible para todos — desde traders minoristas que recién comienzan hasta profesionales con cuentas fondeadas en prop firms. Nuestra misión es simple: darte acceso a algoritmos de trading de última generación, desarrollados internamente, que trabajen para ti las 24 horas.
         </p>
       </div>
     </section>

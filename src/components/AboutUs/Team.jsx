@@ -38,7 +38,7 @@ export default function TeamSection() {
       <div className="max-w-6xl mx-auto text-center space-y-4">
         <h2 className="text-3xl font-bold">Conocé a nuestro equipo</h2>
         <p className="text-white/70 max-w-2xl mx-auto">
-          Nuestra filosofía es simple: formar un equipo diverso y apasionado, y fomentar una cultura que te impulse a dar lo mejor de vos.
+          Nuestra filosofía es simple: formar un equipo diverso y apasionado, y fomentar una cultura que te impulse a dar lo mejor de ti.
         </p>
 
         <div className="items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">

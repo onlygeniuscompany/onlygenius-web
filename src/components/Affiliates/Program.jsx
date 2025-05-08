@@ -22,7 +22,7 @@ export default function AffiliateProgram() {
       <div className="max-w-5xl mx-auto mt-16">
         <h3 className="text-xl font-semibold text-center mb-8">¿Cómo funciona?</h3>
         <p className="text-center text-gray-400 mb-12">
-          Nosotros operamos. Vos definís tus objetivos.
+          Nosotros operamos. Tú defines tus objetivos.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           {[
