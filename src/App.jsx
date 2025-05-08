@@ -9,23 +9,26 @@ import NavbarComp from "./components/NavbarComp.jsx";
 import Services from "./pages/Services.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
-
+import Layout from "./components/Layout.jsx";
+import Algorithms from "./pages/Algorithms.jsx";
 
 
 function App() {
   return (
     <Router>
-      <NavbarComp/>
+      <Layout>
+
       <Routes>
         <Route path="/" element={<Landing />} />        
         <Route path="/faq" element={<FAQ />} />        
         <Route path="/services" element={<Services />} />       
         <Route path="/afiliados" element={<Affiliates />} />        
         <Route path="/nosotros" element={<AboutUs />} />        
+        <Route path="/algoritmos" element={<Algorithms />} />        
         {/* <Route path="/about" element={<About />} />  Acerca de */}
         {/* <Route path="/contact" element={<Contact />} /> Contacto */}
       </Routes>
-      <Foot/>
+      </Layout>
 
     </Router>
   );
