@@ -6,7 +6,7 @@ export default function AffiliateDashboardPreview() {
             Vista previa del Panel de Afiliado
           </h2>
           <p className="text-gray-400 mb-12">
-            Nosotros operamos. Vos definís tus objetivos.
+            Nosotros operamos. Tú defines tus objetivos.
           </p>
           <img
             src={'/affiliate-preview.png'}

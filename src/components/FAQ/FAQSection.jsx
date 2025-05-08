@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "¿Necesito operar por mi cuenta?",
     answer:
-      "No. Nuestro sistema es completamente automatizado. Una vez conectado, los algoritmos se encargan de operar por vos según las estrategias configuradas.",
+      "No. Nuestro sistema es completamente automatizado. Una vez conectado, los algoritmos se encargan de operar por ti según las estrategias configuradas.",
   },
   {
     question: "¿Cuál es la diferencia entre los algoritmos?",
@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "¿Puedo retirar mis fondos en cualquier momento?",
     answer:
-      "Sí. Como cliente, tenés control total sobre tu cuenta. Podés desconectarla del sistema o retirar fondos cuando lo desees, según las condiciones del broker.",
+      "Sí. Como cliente, tienes control total sobre tu cuenta. Podés desconectarla del sistema o retirar fondos cuando lo desees, según las condiciones del broker.",
   },
   {
     question: "¿Qué nivel de riesgo tienen las estrategias?",
@@ -56,7 +56,7 @@ export default function FAQSection() {
     <div className="text-center mb-16">
       <div className="text-[#2563EB] text-[14px] font-semibold">Preguntas frecuentes</div>
       <h2 className="text-[36px] font-bold my-3">Respuestas a tus dudas</h2>
-      <p className="text-[#A1A1AA] text-[16px]">¿Tenés preguntas? Estamos para ayudarte.</p>
+      <p className="text-[#A1A1AA] text-[16px]">¿Tienes preguntas? Estamos para ayudarte.</p>
     </div>
 
     <div className="max-w-[720px] mx-auto">
@@ -77,7 +77,7 @@ export default function FAQSection() {
     </div>
 
     <div className="mt-16 bg-[#18181B] p-8 rounded-xl text-center">
-      <h3 className="text-[18px] font-semibold mb-3">¿Todavía tenés preguntas?</h3>
+      <h3 className="text-[18px] font-semibold mb-3">¿Aún tienes preguntas?</h3>
       <p className="text-[14px] text-[#A1A1AA] mb-4">Si necesitás ayuda, nuestro equipo está listo para asistirte.</p>
       <a href="https://calendly.com/onlygenius-support/30min">
       <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md font-medium text-[14px] border-none cursor-pointer">

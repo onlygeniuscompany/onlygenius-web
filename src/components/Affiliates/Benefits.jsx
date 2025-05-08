@@ -40,7 +40,7 @@ import {
             ¿Por qué unirte a nuestro programa de afiliados?
           </h2>
           <p className="text-gray-400 mb-12">
-            Nosotros operamos. Vos definís tus objetivos.
+            Nosotros operamos. Tú defines tus objetivos.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {features1.map(({ icon, title }, idx) => (
