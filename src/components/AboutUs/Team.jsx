@@ -41,15 +41,19 @@ export default function TeamSection() {
         Un equipo unido por la pasión, impulsado por el desafío y enfocado en transformar el trading con las mejores soluciones tecnológicas y de inversión.
         </p>
 
-        <div className="items-center grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-          {team.map((member, idx) => (
-            <div key={idx} className="flex flex-col items-center space-y-3">
-            <img src={member.image} alt={member.name} className="h-50 w-40  object-cover rounded-md" />
-            <div className={member.color + " text-sm font-medium"}>{member.role}</div>
-            <p className="text-sm text-white/70 text-center">{member.description}</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+  {team.map((member, idx) => (
+    <div key={idx} className="flex flex-col items-center space-y-3">
+      <img
+        src={member.image}
+        alt={member.name}
+        className="w-[160px] aspect-[3/4] object-cover rounded-md"
+      />
+      <div className={`${member.color} text-sm font-medium`}>{member.role}</div>
+      <p className="text-sm text-white/70 text-center">{member.description}</p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
