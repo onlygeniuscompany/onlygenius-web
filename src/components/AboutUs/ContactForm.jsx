@@ -10,6 +10,7 @@ export default function ContactForm() {
     emailjs
       .sendForm(
         "service_jz752zq", // reemplazá con tu Service ID
+        "template_p6oqlsh",
         form.current,
         "ETXgBR_U8k4OCMbYN" // reemplazá con tu Public Key
       )

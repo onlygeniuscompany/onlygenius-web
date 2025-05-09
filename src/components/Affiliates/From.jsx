@@ -12,10 +12,10 @@ export default function AffiliateForm() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",     // ← reemplazá con tu Service ID
-        "YOUR_TEMPLATE_ID",    // ← reemplazá con tu Template ID
+         "service_jz752zq", // reemplazá con tu Service ID
+        "template_0xrwwsu",
         formRef.current,
-        "YOUR_PUBLIC_KEY"      // ← reemplazá con tu Public Key
+        "ETXgBR_U8k4OCMbYN"     // ← reemplazá con tu Public Key
       )
       .then(
         () => {
