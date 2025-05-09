@@ -27,7 +27,7 @@ const team = [
     name: "Nasir Ali",
     role: "Diseñador de Producto",
     description: "Diseñador de productos en OnlyGenius.",
-    image: "/nasir.jpg",
+    image: "/IMG_4007.jpeg",
     color: "text-blue-400",
   },
 ];
