@@ -48,12 +48,7 @@ export default function NavbarComp () {
       </div>
 
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full flex flex-col gap-4 px-6 py-6 border-t border-[#27272A] md:hidden z-50">
-          <div className="flex justify-center mb-4">
-            <a href="/">
-              <img src="/White.png" alt="OnlyGenius Logo" className="h-5 object-contain" />
-            </a>
-          </div>
+        <div className="absolute top-16 left-0 w-full flex flex-col gap-4 px-6 py-6 border-t border-[#27272A] bg-[#333333] md:hidden z-50">
 
           <div className="flex flex-col gap-4 text-center">
             {navItems.map((item, i) => (
