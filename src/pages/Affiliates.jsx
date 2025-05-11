@@ -8,9 +8,9 @@ export default function Affiliates(){
     return(
         <div>
 
+                <AffiliateDashboardPreview/>
                 <AffiliateProgram/>
                 <AffiliateBenefits/>
-                <AffiliateDashboardPreview/>
                 <AffiliateForm/>
         </div>
    

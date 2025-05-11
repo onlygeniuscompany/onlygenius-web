@@ -42,7 +42,12 @@ export default function ServicesSection({Modal}) {
             </ul>
              {/* <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition mr-4" onClick={()=>setOpen(true)} >
               Empezar
-            </button> */}
+              </button> */}
+              <a href="https://calendly.com/onlygenius-support/30min">
+             <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+               Solicitar datos de resultados 
+             </button>
+              </a>
             <a href="https://calendly.com/onlygenius-support/30min">
             <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
               Reservar llamada →

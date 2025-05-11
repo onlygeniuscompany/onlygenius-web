@@ -17,7 +17,6 @@ export default function AboutUs(){
                 <WhyWeExist/>
                 <TeamSection/>
                 
-                <PartnersSection/>
                 <ContactForm/>
             </div>
     )

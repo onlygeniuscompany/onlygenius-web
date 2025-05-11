@@ -41,7 +41,9 @@ export default function NavbarComp () {
         </div>
 
         <a href="https://www.dashboard.onlygenius.es">
-          <div className="hidden md:block bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium whitespace-nowrap cursor-pointer">
+          <div className="hidden md:block bg-[#2563EB] text-white py-2 px-4 rounded-md text-[14px] font-medium whitespace-nowrap cursor-pointer "
+          onMouseEnter={e => e.currentTarget.style.backgroundColor = '#6e6a6a'}
+  onMouseLeave={e => e.currentTarget.style.backgroundColor = '#2563EB'}>
             Área del cliente
           </div>
         </a>

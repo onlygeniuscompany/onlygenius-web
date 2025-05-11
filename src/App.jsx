@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React from 'react';
+import React, { useState } from 'react';
 import Landing from "./pages/Landing";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
@@ -11,12 +11,16 @@ import Affiliates from "./pages/Affiliates.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Layout from "./components/Layout.jsx";
 import Algorithms from "./pages/Algorithms.jsx";
-
-
+import PromoModal from "./components/PromoModal.jsx";
 function App() {
+  const [modalOpen, setModalOpen] = useState(true);
+
+
   return (
     <Router>
+
       <Layout>
+<PromoModal open={modalOpen} onClose={() => setModalOpen(false)} />
 
       <Routes>
         <Route path="/" element={<Landing />} />        

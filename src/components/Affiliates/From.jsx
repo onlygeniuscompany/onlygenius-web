@@ -80,7 +80,7 @@ export default function AffiliateForm() {
             </div>
 
             <div>
-              <label className="block mb-2">¿Sos cliente actualmente?</label>
+              <label className="block mb-2">¿Eres cliente actualmente?</label>
               <div className="flex gap-4">
                 <label className="flex items-center gap-2">
                   <input type="radio" name="is_client" value="Sí" required className="accent-blue-500" />
