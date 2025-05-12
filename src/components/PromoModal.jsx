@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PromoModal({ open, onClose }) {
+export default function PromoModal({ open, onClose, openSolicitar }) {
   if (!open) return null;
 
   return (
@@ -30,6 +30,7 @@ export default function PromoModal({ open, onClose }) {
           <button
             onClick={() => {
               // Podés agregar lógica acá
+              openSolicitar();
               onClose();
             }}
             className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 transition text-white rounded-md text-sm font-medium"

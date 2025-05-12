@@ -39,6 +39,7 @@ export default function ContactForm() {
         </div>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
+            <input type="hidden" name="campaign_source" value="contacto" />
           <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="text"
