@@ -34,7 +34,7 @@ export default function ContactForm() {
           <p className="text-blue-500">Contacto</p>
           <h2 className="text-3xl font-bold">Ponete en contacto</h2>
           <p className="text-white/70 mt-2">
-            Nos encantaría saber de ti. Completá este formulario.
+            Nos encantaría saber de ti. Completa este formulario.
           </p>
         </div>
 
