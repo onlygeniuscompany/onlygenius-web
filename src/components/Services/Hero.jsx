@@ -11,8 +11,8 @@ export default function ServicesSection({Modal}) {
           Gestión Algorítmica & <br /> Servicios de Automatización
         </h2>
         <p className="text-gray-400 max-w-2xl mb-16">
-          OnlyGenius ofrece soluciones completas para traders individuales, empresas y gestores de capital
-          que buscan rendimiento real sin ejecutar operaciones manuales.
+          OnlyGenius ofrece soluciones completas para inversores individuales, empresas y gestores de capital de terceros
+          que buscan rendimiento real de forma totalmente automátizada.
         </p>
 
         {/* Contenido */}
@@ -23,9 +23,9 @@ export default function ServicesSection({Modal}) {
               Gestión de Cuentas Fondeadas (Prop Firms)
             </h3>
             <p className="text-gray-400 mb-6">
-              Te ayudamos a aprobar fases de evaluación y gestionar cuentas fondeadas con firmas como FTMO,
-              MyForexFunds, E8 y otras. Aplicamos nuestros propios algoritmos auditados y optimizados—vos no operás,
-              solo monitoreás los resultados.
+              Nuestros algoritmos aprueban y gestionan por tí fases de evaluación y  cuentas fondeadas con empresas como FTMO,
+              Funding Pips, The5ers y otras. Aplicamos nuestros propios algoritmos auditados y optimizados en menos de 1H mientras
+              tú sólo monitoreas los resultados.
             </p>
             <ul className="space-y-4 text-white">
               {[
