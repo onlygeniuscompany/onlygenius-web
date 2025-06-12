@@ -9,7 +9,7 @@ export default function AffiliateDashboardPreview() {
             Nosotros operamos. Tú defines tus objetivos.
           </p>
           <img
-            src={'/affiliate-preview.png'}
+            src={'/affiliates.png'}
             alt="Panel de afiliado"
             className="rounded-xl shadow-xl mx-auto border border-[#222]"
           />
