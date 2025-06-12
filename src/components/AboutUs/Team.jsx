@@ -30,6 +30,20 @@ const team = [
     image: "/IMG_4007.jpeg",
     color: "text-blue-400",
   },
+  {
+    name: "Victor",
+    role: "IT",
+    description: "Desarrollador en OnlyGenius.",
+    image: "/Victor.png",
+    color: "text-blue-500",
+  },
+  {
+    name: "Mati",
+    role: "Diseñador de Producto",
+    description: "Diseñador de productos en OnlyGenius.",
+    image: "/Mati.png",
+    color: "text-blue-400",
+  },
 ];
 
 export default function TeamSection() {
