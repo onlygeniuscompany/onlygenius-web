@@ -31,14 +31,14 @@ const team = [
     color: "text-blue-400",
   },
   {
-    name: "Victor",
+    name: "Victor Peralta",
     role: "IT",
     description: "Desarrollador en OnlyGenius.",
     image: "/Victor.png",
     color: "text-blue-500",
   },
   {
-    name: "Mati",
+    name: "Matias Marrone",
     role: "Diseñador de Producto",
     description: "Diseñador de productos en OnlyGenius.",
     image: "/Mati.png",
