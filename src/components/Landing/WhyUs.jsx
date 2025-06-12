@@ -7,22 +7,22 @@ const rows = [
     },
     {
       feature: "Historial auditado",
-      onlyGenius: <span style={{ color: "#22C55E" }}>✔️</span>,
+      onlyGenius: <span style={{ color: "#22C55E" }}>✅</span>,
       others: <span style={{ color: "#EF4444" }}>❌</span>,
     },
     {
       feature: "Totalmente automatizado (sin intervención manual)",
-      onlyGenius: <span style={{ color: "#22C55E" }}>✔️</span>,
+      onlyGenius: <span style={{ color: "#22C55E" }}>✅</span>,
       others: <span style={{ color: "#EF4444" }}>Limitado</span>,
     },
     {
       feature: "Paneles avanzados en tiempo real",
-      onlyGenius: <span style={{ color: "#22C55E" }}>✔️</span>,
+      onlyGenius: <span style={{ color: "#22C55E" }}>✅</span>,
       others: <span style={{ color: "#EF4444" }}>Básico</span>,
     },
     {
       feature: "Soporte experto personalizado",
-      onlyGenius: <span style={{ color: "#22C55E" }}>✔️</span>,
+      onlyGenius: <span style={{ color: "#22C55E" }}>✅</span>,
       others: <span style={{ color: "#EF4444" }}>Soporte genérico</span>,
     },
     {
@@ -32,7 +32,7 @@ const rows = [
     },
     {
       feature: "Bots de trading personalizados",
-      onlyGenius: <span style={{ color: "#22C55E" }}>✔️</span>,
+      onlyGenius: <span style={{ color: "#22C55E" }}>✅</span>,
       others: <span style={{ color: "#EF4444" }}>❌</span>,
     },
     {
