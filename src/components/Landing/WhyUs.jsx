@@ -7,22 +7,22 @@ const rows = [
     },
     {
       feature: "Historial auditado",
-      onlyGenius: "✔️",
+      onlyGenius: "✅",
       others: "❌",
     },
     {
       feature: "Totalmente automatizado (sin intervención manual)",
-      onlyGenius: "✔️",
+      onlyGenius: "✅",
       others: "Limitado",
     },
     {
       feature: "Paneles avanzados en tiempo real",
-      onlyGenius: "✔️",
+      onlyGenius: "✅",
       others: "Básico",
     },
     {
       feature: "Soporte experto personalizado",
-      onlyGenius: "✔️",
+      onlyGenius: "✅",
       others: "Soporte genérico",
     },
     {
@@ -32,7 +32,7 @@ const rows = [
     },
     {
       feature: "Bots de trading personalizados",
-      onlyGenius: "✔️",
+      onlyGenius: "✅",
       others: "❌",
     },
     {
