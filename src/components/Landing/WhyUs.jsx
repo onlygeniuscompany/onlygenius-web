@@ -42,7 +42,7 @@ const rows = [
     },
   ];
 const WhyUs = ()=>{
-    return (<div className=" px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center gap-12">
+    return (<div className="hidden lg:flex px-6 py-24 font-inter text-[#FAFAFA] flex flex-col items-center gap-12">
       <div className="text-center max-w-[800px]">
         <div className="text-[#2563EB] text-[14px] font-semibold">Por qué elegirnos</div>
         <h2 className="text-[32px] font-bold my-4">¿Por qué elegir OnlyGenius?</h2>
