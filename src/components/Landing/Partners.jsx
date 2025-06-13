@@ -9,7 +9,7 @@ export default function PartnersSection() {
           <img
             src="/forextester.png"
             alt="Partner 2"
-            className="h-20 object-contain bg-[#f2f2f275] rounded"
+            className="h-20 object-contain"
           />
           <img
             src="/Dashprop logo.png"
@@ -19,7 +19,7 @@ export default function PartnersSection() {
           <img
             src="/Post-Affiliate-Pro.png"
             alt="Partner 2"
-            className="h-20 object-contain bg-[#f2f2f236] rounded"
+            className="h-20 object-contain"
           />
         </div>
       </div>
