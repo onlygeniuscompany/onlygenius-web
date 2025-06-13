@@ -52,7 +52,7 @@ const WhyUs = ()=>{
       </div>
 
       <div className="w-full max-w-[1000px] overflow-x-auto rounded-lg border border-[#27272A]">
-        <table className="w-full border-collapse text-[14px]">
+        <table className="w-full min-w-[600px] border-collapse text-[14px]">
           <thead>
             <tr className="bg-[#18181B] text-[#A1A1AA] text-left">
               <th className="py-4 px-6">Features</th>
