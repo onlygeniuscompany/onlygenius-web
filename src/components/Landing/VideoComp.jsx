@@ -10,8 +10,7 @@ export default function TestimonialWithVideo() {
         <div className="w-full md:w-1/2 p-8 space-y-4">
           <div className="text-yellow-400 text-xl">★★★★★</div>
           <p className="text-white text-lg leading-relaxed">
-            I was skeptical about handing over my trading account, but OnlyGenius proved to be a game-changer.
-            The automated system outperformed my manual trades consistently!
+            Con paciencia y gestión de riesgo, los resultados van a llegar.
           </p>
           <div>
             <p className="text-white font-semibold">— Adam M</p>
