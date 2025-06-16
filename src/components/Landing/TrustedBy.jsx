@@ -4,7 +4,7 @@ import React from "react";
 const TrustedBy =()=>{
     return (<div className=" px-6 py-24 flex flex-col items-center gap-12 text-[#FAFAFA]">
         <div className="text-center max-w-[800px]">
-          <div className="text-[#2563EB] text-[14px] font-semibold">Trusted by</div>
+          <div className="text-[#2563EB] text-[14px] font-semibold">Con la confianza de</div>
           <h2 className="text-[32px] font-bold my-4">Con la confianza de empresas, traders minoristas y gestores de capital</h2>
           <p className="text-[#A1A1AA] text-[16px]">
             Gestionamos cuentas tanto para particulares como para instituciones, ayudándolos a diversificar su capital mediante sistemas algorítmicos eficientes y confiables.
