@@ -8,7 +8,7 @@ return (
 
     {/* Hero Section */}
     <div className="text-center py-[25px]">
-      <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2013</div>
+      <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2023</div>
       <h1 className="text-[clamp(35px,6vw,48px)] font-bold leading-[56px] my-[10px]">
       Estrategias que trabajan mientras vos <span className="text-[#2563EB]">descansás</span>.
       </h1>
@@ -65,7 +65,7 @@ return (
   
         {/* Contenido principal */}
         <div style={{ position: "relative", zIndex: 1, maxWidth: 800, margin: "0 auto" }}>
-          <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 600 }}>Desde 2013</div>
+          <div style={{ color: "#2563EB", fontSize: 14, fontWeight: 600 }}>Desde 2023</div>
           <h1 style={{ fontSize: 40, fontWeight: 700, marginTop: 12, lineHeight: 1.2 }}>
             Your gateway to <span style={{ color: "#2563EB" }}>algorithmic</span> <br />
             capital management
@@ -113,7 +113,7 @@ const HeroSection = () => {
         }}
       >
         <div style={{ maxWidth: 960, margin: '0 auto', zIndex: 2, position: 'relative' }}>
-          <div style={{ color: '#3B82F6', fontSize: 14, fontWeight: 600 }}>Desde 2013</div>
+          <div style={{ color: '#3B82F6', fontSize: 14, fontWeight: 600 }}>Desde 2023</div>
           <h1 style={{ fontSize: 36, fontWeight: 700, margin: '16px 0' }}>
             Your gateway to{' '}
             <span style={{ color: '#3B82F6' }}>algorithmic</span>
