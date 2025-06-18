@@ -7,7 +7,7 @@ return (
   <div className="max-w-[1280px] mx-auto px-4 ">
     {/* Hero Section */}
     <div className="text-center py-[25px]">
-      <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2012</div>
+      <div className="text-[#2563EB] text-[16px] font-semibold leading-[24px]">Desde 2023</div>
       <h1 className="text-[clamp(35px,6vw,48px)] font-bold leading-[56px] my-[10px]">
       Gestión algorítmica de capital,  <span className="text-[#2563EB]">sin complicaciones.</span>
       </h1>

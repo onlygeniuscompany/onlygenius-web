@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 export default function TestimonialWithVideo() {
   const [open, setOpen] = useState(false);
 
@@ -9,18 +9,17 @@ export default function TestimonialWithVideo() {
         {/* Testimonial */}
         <div className="w-full md:w-1/2 p-8 space-y-4">
           <div className="text-yellow-400 text-xl">★★★★★</div>
+          
           <p className="text-white text-lg leading-relaxed">
+            <FaQuoteLeft className="w-4 h-4" />
             Con paciencia y gestión de riesgo, los resultados van a llegar.
+            <FaQuoteRight className="w-4 h-4" />
           </p>
           <div>
-            <p className="text-white font-semibold">— Adam M</p>
-            <p className="text-white/60 text-sm">Funded Trader (UK)</p>
+            <p className="text-white font-semibold">— Alex Bruna</p>
+            <p className="text-white/60 text-sm">Trader algoritmico y fundador de onlygenius (ES)</p>
           </div>
-          <div className="flex gap-2 pt-4">
-            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-            <span className="w-2 h-2 bg-gray-600 rounded-full"></span>
-            <span className="w-2 h-2 bg-gray-600 rounded-full"></span>
-          </div>
+
         </div>
 
         {/* Video image */}
