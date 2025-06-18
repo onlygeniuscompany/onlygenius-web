@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Select, SelectItem } from "./ui/Select";
 
 export default function StartModal({ open, onClose }) {
   const [form, setForm] = useState({
@@ -127,18 +128,15 @@ export default function StartModal({ open, onClose }) {
             onChange={(e) => handleChange("passRead", e.target.value)}
             className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
           />
-          <select
+          <Select
             value={form.initialBalance}
-            onChange={(e) => handleChange("initialBalance", e.target.value)}
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
+            onValueChange={(val) => handleChange("initialBalance", val)}
+            placeholder="Tamaño de cuenta"
           >
-            <option value="" disabled>
-              Tamaño de cuenta
-            </option>
-            <option value="50000">50k</option>
-            <option value="100000">100k</option>
-            <option value="custom">Custom</option>
-          </select>
+            <SelectItem value="50000">50k</SelectItem>
+            <SelectItem value="100000">100k</SelectItem>
+            <SelectItem value="custom">Custom</SelectItem>
+          </Select>
           {form.initialBalance === "custom" && (
             <input
               type="number"
@@ -148,30 +146,24 @@ export default function StartModal({ open, onClose }) {
               className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
             />
           )}
-          <select
+          <Select
             value={form.tipo}
-            onChange={(e) => handleChange("tipo", e.target.value)}
-            className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
+            onValueChange={(val) => handleChange("tipo", val)}
+            placeholder="Tipo de cuenta"
           >
-            <option value="" disabled>
-              Tipo de cuenta
-            </option>
-            <option value="broker">Broker</option>
-            <option value="propfirm">Examen de fondeo</option>
-          </select>
+            <SelectItem value="broker">Broker</SelectItem>
+            <SelectItem value="propfirm">Examen de fondeo</SelectItem>
+          </Select>
           {form.tipo === "propfirm" && (
-            <select
+            <Select
               value={form.fase}
-              onChange={(e) => handleChange("fase", e.target.value)}
-              className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
+              onValueChange={(val) => handleChange("fase", val)}
+              placeholder="Fase del desafío"
             >
-              <option value="" disabled>
-                Fase del desafío
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="Fondeada">Fondeada</option>
-            </select>
+              <SelectItem value="1">1</SelectItem>
+              <SelectItem value="2">2</SelectItem>
+              <SelectItem value="Fondeada">Fondeada</SelectItem>
+            </Select>
           )}
           <input
             type="text"
