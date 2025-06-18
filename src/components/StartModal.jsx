@@ -51,7 +51,7 @@ export default function StartModal({ open, onClose }) {
     };
 
     try {
-      await fetch("/users/", {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/demo-requests/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -61,6 +61,7 @@ export default function StartModal({ open, onClose }) {
       console.error(err);
     }
   };
+  console.log(process.env.NEXT_PUBLIC_API_URL)
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
