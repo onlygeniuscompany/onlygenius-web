@@ -5,14 +5,13 @@ export default function TestimonialWithVideo() {
 
   return (
     <section className="py-20 px-6">
-      <div className="max-w-9xl mx-auto rounded-xl overflow-hidden bg-[#1b1b1b] flex flex-col md:flex-row">
+<div className="max-w-9xl mx-auto rounded-xl overflow-hidden bg-[#1b1b1b] flex flex-col md:flex-row">
         {/* Testimonial */}
-        <div className="w-full md:w-1/2 p-8 space-y-4">
+        <div className="w-full md:w-1/2 p-8 space-y-4 flex flex-col items-center justify-center text-center">
           <div className="text-yellow-400 text-xl">★★★★★</div>
-          
-          <p className="text-white text-lg leading-relaxed">
+          <p className="text-white text-lg leading-relaxed flex items-center justify-center gap-2">
             <FaQuoteLeft className="w-4 h-4" />
-            Con paciencia y gestión de riesgo, los resultados van a llegar.
+            <span>Con paciencia y gestión de riesgo, los resultados van a llegar.</span>
             <FaQuoteRight className="w-4 h-4" />
           </p>
           <div>

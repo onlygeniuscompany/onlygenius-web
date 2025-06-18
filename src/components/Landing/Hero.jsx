@@ -25,7 +25,7 @@ return (
   </div>
   <div className="text-center ">
       <img
-        src="/dash-earth.png"
+        src="/Dashboard Web Mockup.png"
         alt="Dashboard preview"
         className="max-w-full rounded-[16px]"
       />
