@@ -2,6 +2,7 @@
 "use client";
 
 import { CheckIcon } from "lucide-react";
+import vpsImage from "/Virtual Private Server image.png";
 
 export function VPSSection() {
   return (
@@ -9,13 +10,7 @@ export function VPSSection() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Ilustración */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <img
-            src="/vps-illustration.png" // ⚠️ Asegurate de colocar la imagen ahí o cambiar este path
-            alt="VPS Illustration"
-            width={480}
-            height={480}
-            className="object-contain"
-          />
+          <img src={vpsImage} alt="VPS" width={480} height={480} className="object-contain"></img>
         </div>
 
         {/* Contenido */}
