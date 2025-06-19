@@ -4,7 +4,7 @@ export default function ServicesSection({Modal}) {
   return (
     <section className="w-full  text-white py-24 px-6 md:px-12">
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Intro */}
         <p className="text-sm text-blue-500 font-medium">Servicios</p>
         <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
@@ -16,7 +16,7 @@ export default function ServicesSection({Modal}) {
         </p>
 
         {/* Contenido */}
-        <div className="flex flex-col lg:flex-row items-start gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Izquierda: Texto + Características */}
           <div className="flex-1">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
