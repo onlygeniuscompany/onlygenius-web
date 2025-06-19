@@ -9,6 +9,7 @@ import NavbarComp from "./components/NavbarComp.jsx";
 import Services from "./pages/Services.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
+import Vps from "./pages/Vps.jsx";
 import UnderConstruction from "./pages/UnderConstruction.jsx";
 
 
@@ -40,10 +41,11 @@ function App() {
         {/* <Route path="/" element={<UnderConstruction />} />         */}
         <Route path="/" element={<Landing />} />        
         <Route path="/faq" element={<FAQ />} />        
-        <Route path="/services" element={<Services />} />       
-        <Route path="/afiliados" element={<Affiliates />} />        
-        <Route path="/nosotros" element={<AboutUs />} />        
-        <Route path="/algoritmos" element={<Algorithms />} />        
+        <Route path="/services" element={<Services />} />
+        <Route path="/afiliados" element={<Affiliates />} />
+        <Route path="/vps" element={<Vps />} />
+        <Route path="/nosotros" element={<AboutUs />} />
+        <Route path="/algoritmos" element={<Algorithms />} />
          {/* <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       </Layout>
