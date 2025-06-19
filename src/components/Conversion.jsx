@@ -6,7 +6,7 @@ const Conversion = () => {
     <div className="bg-gradient-to-r from-[#18181B] to-[#27272A] px-8 py-6 rounded-xl max-w-[900px] w-full flex justify-between items-center flex-wrap gap-4">
       <div>
         <div className="text-[#FAFAFA] text-[16px] font-semibold mb-2">
-          ¿Usás otra plataforma o necesitás una conversión?
+        ¿Usas otra plataforma o necesitas una conversión?
         </div>
         <div className="text-[#A1A1AA] text-[14px]">
         Podemos adaptar nuestros algoritmos para funcionar con tu plataforma de trading preferida.

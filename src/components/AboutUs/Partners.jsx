@@ -22,7 +22,7 @@ export default function PartnersSection() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-center mt-10">
           {partners.map((partner, idx) => (
-            <div key={idx} className="flex items-center justify-center bg-[#0f0f11] rounded-md p-4">
+            <div key={idx} className="flex items-center justify-center rounded-md p-4">
               <img src={partner.logo} alt={partner.name} className="h-25 object-contain" />
             </div>
           ))}

@@ -10,7 +10,7 @@ const CoreServices = () => {
         Gestión de cuentas totalmente automatizada. Sin complicaciones.
         </div>
         <div className="text-center text-[#A1A1AA] text-[16px] font-normal leading-[24px]">
-        Nosotros operamos. Vos definís los objetivos.
+        Nosotros operamos. Tú defines tus objetivos.
         </div>
         <div className="flex flex-wrap justify-center gap-6 mt-12">
         {[{
