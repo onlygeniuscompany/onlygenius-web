@@ -8,30 +8,33 @@ export default function AlgorithmsSection() {
   const algorithms = [
     {
       name: "OnlyBlackBox",
-      riskLevel: "Low risk",
-      riskColor: "bg-green-700",
-      avgReturn: "21.4%",
-      drawdown: "9.8%",
-      sharpe: "2.18",
-      winRate: "78.3%",
+      riskLevel: "Riesgo alto",
+      riskColor: "bg-red-700",
+      avgReturn: "20.05%",
+      drawdown: "-9.75%",
+      sharpe: "1.4",
+      winRate: "38.88%",
+      img:'BB.png'
     },
     {
       name: "OnlySystem",
-      riskLevel: "High risk",
-      riskColor: "bg-red-700",
-      avgReturn: "21.4%",
-      drawdown: "9.8%",
-      sharpe: "2.18",
-      winRate: "78.3%",
+      riskLevel: "Riesgo medio",
+      riskColor: "bg-yellow-600",
+      avgReturn: "17.9%",
+      drawdown: "-8.8%",
+      sharpe: "1.39",
+      winRate: "41.07%",
+      img:'OS.png'
     },
     {
       name: "OnlyHedge",
-      riskLevel: "Medium risk",
-      riskColor: "bg-yellow-600",
-      avgReturn: "21.4%",
-      drawdown: "9.8%",
-      sharpe: "2.18",
-      winRate: "78.3%",
+      riskLevel: "Riesgo bajo",
+      riskColor: "bg-green-700",
+      avgReturn: "15.25%",
+      drawdown: "-2.26%",
+      sharpe: "1.87",
+      winRate: "53.33%",
+      img:'OH.png'
     },
   ];
 
@@ -39,10 +42,10 @@ export default function AlgorithmsSection() {
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center">
-          <h3 className="text-blue-500 text-sm font-medium">Algorithms</h3>
-          <h2 className="text-3xl font-bold text-white mt-2">Our Algorithms</h2>
+          <h3 className="text-blue-500 text-sm font-medium">Algoritmos</h3>
+          <h2 className="text-3xl font-bold text-white mt-2">Nuestros algoritmos</h2>
           <p className="text-white/70 mt-2 max-w-xl mx-auto">
-            Explore our proven trading algorithms designed to deliver consistent results across various market conditions.
+            Explore nuestros algoritmos comerciales probados, diseñados para ofrecer resultados consistentes en diversas condiciones del mercado.
           </p>
         </div>
 

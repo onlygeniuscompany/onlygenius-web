@@ -9,6 +9,7 @@ export default function AlgorithmCard({
   sharpe,
   winRate,
   onRequestAccess,
+  img
 }) {
   return (
     <div className="rounded-xl p-6 flex flex-col gap-4 border border-[#2a2a2a]">
@@ -24,16 +25,14 @@ export default function AlgorithmCard({
 
       {/* Video Placeholder */}
       <div className="bg-[#1a1a1a] h-[160px] rounded-lg flex items-center justify-center text-white/30">
-        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M17 10.5V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 
-          2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3.5l4 4v-11l-4 4z" />
-        </svg>
+        <img src={img}/>
+
       </div>
 
       {/* Stats */}
       <div className="grid grid-cols-2 gap-4 text-white text-sm">
         <div>
-          <p className="text-white/60">Avg. Monthly Return</p>
+          <p className="text-white/60">Media retorno anual</p>
           <p className="font-semibold">{avgReturn}</p>
         </div>
         <div>
@@ -41,11 +40,11 @@ export default function AlgorithmCard({
           <p className="font-semibold">{drawdown}</p>
         </div>
         <div>
-          <p className="text-white/60">Sharpe Ratio</p>
+          <p className="text-white/60">Ratio sharpe</p>
           <p className="font-semibold">{sharpe}</p>
         </div>
         <div>
-          <p className="text-white/60">Win Rate</p>
+          <p className="text-white/60">Winrate</p>
           <p className="font-semibold">{winRate}</p>
         </div>
       </div>
@@ -55,7 +54,7 @@ export default function AlgorithmCard({
         onClick={onRequestAccess}
         className="mt-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md text-sm w-fit self-start"
       >
-        Request access →
+        Pedir acceso →
       </button>
     </div>
   );
