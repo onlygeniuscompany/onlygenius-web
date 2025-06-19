@@ -3,17 +3,15 @@ export default function ServicesSection({Modal}) {
   const [open,setOpen] = useState(false)
   return (
     <section className="w-full  text-white py-24 px-6 md:px-12">
-
-      <div className="max-w-6xl mx-auto text-center">
-        {/* Intro */}
-        <p className="text-sm text-blue-500 font-medium">Servicios</p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
-          Gestión Algorítmica & <br /> Servicios de Automatización
-        </h2>
-        <p className="text-gray-400 max-w-2xl mb-16">
+    <div className="max-w-6xl mx-auto space-y-12">
+        <div className="text-center">
+          <h3 className="text-blue-500 text-sm font-medium">Servicios</h3>
+          <h2 className="text-3xl font-bold text-white mt-2">Gestión Algorítmica & <br /> Servicios de Automatización</h2>
+          <p className="text-white/70 mt-2 max-w-xl mx-auto">
           OnlyGenius ofrece soluciones completas para inversores individuales, empresas y gestores de capital de terceros
           que buscan rendimiento real de forma totalmente automátizada.
         </p>
+    </div>
 
         {/* Contenido */}
         <div className="flex flex-col lg:flex-row items-center gap-12">
