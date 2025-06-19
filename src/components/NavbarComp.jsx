@@ -7,6 +7,7 @@ export default function NavbarComp () {
     {name:'Servicios',to:'services'},
     {name:'Algoritmos',to:'algoritmos'},
     {name:'Programa de afiliados',to:'afiliados'},
+    {name:'VPS',to:'vps'},
     {name:'FAQs',to:'faq'},
     {name:'Nosotros',to:'nosotros'},
   ];
