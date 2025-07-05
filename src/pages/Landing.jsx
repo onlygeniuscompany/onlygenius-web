@@ -9,6 +9,7 @@ import WhyUs from "../components/Landing/WhyUs";
 import WhatWeDo from "../components/Landing/WhatWeDo";
 import PartnersSection from "../components/Landing/Partners";
 import TestimonialWithVideo from "../components/Landing/VideoComp"
+import FlagCarousel from "../components/Landing/FlagCarousel";
 
 
 
@@ -22,6 +23,7 @@ export default function Landing() {
         <TestimonialWithVideo/>
         <TrustedBy/>
         <GlobalReach/>
+        <FlagCarousel />
         <WhyUs/>
         <Conversion/>
         {/* <InHouseTechnologySection/> */}
