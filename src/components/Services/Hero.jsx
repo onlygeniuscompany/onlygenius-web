@@ -1,29 +1,37 @@
 import React, { useState } from "react";
-export default function ServicesSection({Modal}) {
-  const [open,setOpen] = useState(false)
+
+export default function ServicesSection({ Modal }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <section className="w-full  text-white py-24 px-6 md:px-12">
-    <div className="max-w-6xl mx-auto space-y-12">
+    <section className="w-full text-white py-24 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto space-y-12">
+        {/* Encabezado */}
         <div className="text-center">
           <h3 className="text-blue-500 text-sm font-medium">Servicios</h3>
-          <h2 className="text-3xl font-bold text-white mt-2">Gestión Algorítmica & <br /> Servicios de Automatización</h2>
+          <h2 className="text-3xl font-bold text-white mt-2">
+            Gestión Algorítmica & <br /> Servicios de Automatización
+          </h2>
           <p className="text-white/70 mt-2 max-w-xl mx-auto">
-          OnlyGenius ofrece soluciones completas para inversores individuales, empresas y gestores de capital de terceros
-          que buscan rendimiento real de forma totalmente automátizada.
-        </p>
-    </div>
+            OnlyGenius ofrece soluciones completas para inversores individuales,
+            empresas y gestores de capital de terceros que buscan rendimiento
+            real de forma totalmente automátizada.
+          </p>
+        </div>
 
         {/* Contenido */}
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Izquierda: Texto + Características */}
           <div className="flex-1">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
               Gestión de Cuentas Fondeadas (Prop Firms)
             </h3>
             <p className="text-gray-400 mb-6">
-              Nuestros algoritmos aprueban y gestionan por tí fases de evaluación y  cuentas fondeadas con empresas como FTMO,
-              Funding Pips, The5ers y otras. Aplicamos nuestros propios algoritmos auditados y optimizados en menos de 1H mientras
-              tú sólo monitoreas los resultados.
+              Nuestros algoritmos aprueban y gestionan por tí fases de
+              evaluación y cuentas fondeadas con empresas como FTMO, Funding
+              Pips, The5ers y otras. Aplicamos nuestros propios algoritmos
+              auditados y optimizados en menos de 1H mientras tú sólo monitoreas
+              los resultados.
             </p>
             <ul className="space-y-4 text-white">
               {[
@@ -38,24 +46,34 @@ export default function ServicesSection({Modal}) {
                 </li>
               ))}
             </ul>
-             {/* <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition mr-4" onClick={()=>setOpen(true)} >
-              Empezar
-              </button> */}
-             <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition mr-4" onClick={()=>setOpen(true)}>
-               Solicitar datos de resultados 
-             </button>
-            <a href="https://calendly.com/onlygenius-support/30min">
-            <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-              Reservar llamada →
-            </button>
-             </a>
+
+            {/* Botones */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <button
+                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+                onClick={() => setOpen(true)}
+              >
+                Solicitar datos de resultados
+              </button>
+              <a href="https://calendly.com/onlygenius-support/30min">
+                <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+                  Reservar llamada →
+                </button>
+              </a>
+            </div>
           </div>
 
           {/* Derecha: Imagen */}
-          <img src="/image (5).png" alt="Gráficos y logotipos" className="max-w-[500px] min-w-[280px]" />
+          <img
+            src="/image (5).png"
+            alt="Gráficos y logotipos"
+            className="w-full max-w-[500px] min-w-[280px] object-contain"
+          />
         </div>
       </div>
-      <Modal open={open} onClose={()=>setOpen(false)}/>
+
+      {/* Modal */}
+      <Modal open={open} onClose={() => setOpen(false)} />
     </section>
   );
 }
