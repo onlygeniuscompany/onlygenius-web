@@ -107,3 +107,24 @@ a:hover {
     }
   }
 }
+@keyframes cambioFondo {
+  0%   { background-color: #2563EB; transform: scale(1); }
+  50%  { background-color: #6e6a6a; transform: scale(1.05); }
+  100% { background-color: #2563EB; transform: scale(1); }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(110, 106, 106, 0.7);
+  }
+}
+
+.boton-animado {
+  animation: cambioFondo 4s ease-in-out infinite, glow 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
