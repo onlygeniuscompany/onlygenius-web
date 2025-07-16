@@ -9,13 +9,13 @@ export default function PromoModal({ open, onClose, openSolicitar }) {
         {/* Botón de cerrar */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-white/60 hover:text-white text-2xl font-bold"
+          className="absolute right-2 top-2 sm:right-4 sm:top-3 text-white/60 hover:text-white text-2xl font-bold"
         >
           ×
         </button>
 
         {/* Contenido */}
-        <div className="flex flex-col items-center text-center gap-4">
+        <div className="flex flex-col items-center text-center gap-4 pt-4">
           <h2 className="text-2xl font-semibold leading-tight">
             ¿Quieres conocer nuestros <br /> resultados?
           </h2>
