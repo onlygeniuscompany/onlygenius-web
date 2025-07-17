@@ -5,7 +5,7 @@ const CoreServices = () => {
 
     return (
         <div className="py-16">
-        <div className="text-center text-[#2563EB] text-[16px] font-semibold leading-[24px]">Core Services</div>
+        <div className="text-center text-[#2563EB] text-[16px] font-semibold leading-[24px]">Servicios Principales</div>
         <div className="text-center text-[clamp(28px,5vw,36px)] font-bold leading-[40px] text-[#FAFAFA]">
         Gestión de cuentas totalmente automatizada. Sin complicaciones.
         </div>
