@@ -14,7 +14,7 @@ export default function AlgorithmsSection() {
       drawdown: "-9.75%",
       sharpe: "1.4",
       winRate: "38.88%",
-      img:'BB.png'
+      img:'onlyblackbox.png'
     },
     {
       name: "OnlySystem",
@@ -24,7 +24,7 @@ export default function AlgorithmsSection() {
       drawdown: "-8.8%",
       sharpe: "1.39",
       winRate: "41.07%",
-      img:'OS.png'
+      img:'onlysystem.jpg'
     },
     {
       name: "OnlyHedge",
@@ -34,7 +34,7 @@ export default function AlgorithmsSection() {
       drawdown: "-2.26%",
       sharpe: "1.87",
       winRate: "53.33%",
-      img:'OH.png'
+      img:'onlyhedge.png'
     },
   ];
 
