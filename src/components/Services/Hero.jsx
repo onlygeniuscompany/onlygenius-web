@@ -27,10 +27,10 @@ export default function ServicesSection({ Modal }) {
               Gestión de Cuentas Fondeadas (Prop Firms)
             </h3>
             <p className="text-gray-400 mb-6">
-              Nuestros algoritmos aprueban y gestionan por tí fases de
+              Nuestros algoritmos aprueban y gestionan por ti fases de
               evaluación y cuentas fondeadas con empresas como FTMO, Funding
               Pips, The5ers y otras. Aplicamos nuestros propios algoritmos
-              auditados y optimizados en menos de 1H mientras tú sólo monitoreas
+              auditados y optimizados en menos de 1H mientras tú solo monitoreas
               los resultados.
             </p>
             <ul className="space-y-4 text-white">

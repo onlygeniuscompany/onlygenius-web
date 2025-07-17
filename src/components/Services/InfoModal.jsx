@@ -10,7 +10,7 @@ export default function PerformanceAccessModal({ open, onClose }) {
       <div className="w-full max-w-md rounded-lg bg-[#0F0F11] border border-[#27272A] text-white p-6 shadow-xl max-h-screen overflow-y-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-base font-semibold">Request access to performance data</h2>
+          <h2 className="text-base font-semibold">Solicita acceso a datos de rendimiento</h2>
           <button onClick={onClose} className="text-[#A1A1AA] hover:text-white text-xl">
             &times;
           </button>
@@ -48,7 +48,7 @@ export default function PerformanceAccessModal({ open, onClose }) {
               className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm"
             >
               <option value="" disabled>
-                Seleccioná una opción
+                Selecciona una opción
               </option>
               <option value="$50k">$50k</option>
               <option value="$100k">$100k</option>
@@ -73,7 +73,7 @@ export default function PerformanceAccessModal({ open, onClose }) {
           <div>
             <label className="block text-sm text-[#E4E4E7] mb-1">Fase actual del Challenge</label>
             <select name="challenge_phase" required className="w-full px-4 py-2 rounded-md bg-[#18181B] text-white border border-[#27272A] text-sm">
-              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="" disabled selected>Selecciona una opción</option>
               <option value="Fase 1">Fase 1</option>
               <option value="Fase 2">Fase 2</option>
               <option value="Cuenta fondeada">Cuenta fondeada</option>

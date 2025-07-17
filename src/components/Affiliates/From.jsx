@@ -12,10 +12,10 @@ export default function AffiliateForm() {
 
     emailjs
       .sendForm(
-         "service_jz752zq", // reemplazá con tu Service ID
+         "service_jz752zq", // reemplaza con tu Service ID
         "template_0xrwwsu",
         formRef.current,
-        "ETXgBR_U8k4OCMbYN"     // ← reemplazá con tu Public Key
+        "ETXgBR_U8k4OCMbYN"     // ← reemplaza con tu Public Key
       )
       .then(
         () => {
@@ -51,7 +51,7 @@ export default function AffiliateForm() {
               <input
                 name="first_name"
                 type="text"
-                placeholder="Ingresá tu nombre"
+                placeholder="Introduce tu nombre"
                 required
                 className="w-full bg-[#111] border border-[#333] rounded px-4 py-2"
               />
@@ -62,7 +62,7 @@ export default function AffiliateForm() {
               <input
                 name="last_name"
                 type="text"
-                placeholder="Ingresá tu apellido"
+                placeholder="Introduce tu apellido"
                 required
                 className="w-full bg-[#111] border border-[#333] rounded px-4 py-2"
               />
@@ -73,7 +73,7 @@ export default function AffiliateForm() {
               <input
                 name="email"
                 type="email"
-                placeholder="Ingresá tu correo"
+                placeholder="Introduce tu correo"
                 required
                 className="w-full bg-[#111] border border-[#333] rounded px-4 py-2"
               />

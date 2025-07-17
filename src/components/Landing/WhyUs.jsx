@@ -47,7 +47,7 @@ const WhyUs = ()=>{
         <div className="text-[#2563EB] text-[14px] font-semibold">Por qué elegirnos</div>
         <h2 className="text-[32px] font-bold my-4">¿Por qué elegir OnlyGenius?</h2>
         <p className="text-[#A1A1AA] text-[16px]">
-          Descubrí las ventajas que nos convierten en la elección preferida de traders algorítmicos en todo el mundo.
+          Descubre las ventajas que nos convierten en la elección preferida de traders algorítmicos en todo el mundo.
         </p>
       </div>
 

@@ -16,7 +16,7 @@ export function VPSSection() {
         {/* Contenido */}
         <div className="w-full md:w-1/2 space-y-6">
           <p className="text-muted-foreground">
-            Contratá servidores dedicados para ejecutar tus estrategias sin
+            Contrata servidores dedicados para ejecutar tus estrategias sin
             límites.
           </p>
           <p className="text-sm text-muted-foreground">

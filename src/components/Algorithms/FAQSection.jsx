@@ -29,12 +29,12 @@ const faqs = [
   {
     question: "¿Cómo puedo hacer seguimiento del rendimiento?",
     answer:
-      "Te damos acceso a un panel de control en tiempo real donde podés ver el rendimiento de tu cuenta, estadísticas clave y gráficos detallados de cada operación.",
+      "Te damos acceso a un panel de control en tiempo real donde puedes ver el rendimiento de tu cuenta, estadísticas clave y gráficos detallados de cada operación.",
   },
   {
     question: "¿Puedo retirar mis fondos en cualquier momento?",
     answer:
-      "Sí. Como cliente, tienes control total sobre tu cuenta. Podés desconectarla del sistema o retirar fondos cuando lo desees, según las condiciones del broker.",
+      "Sí. Como cliente, tienes control total sobre tu cuenta. Puedes desconectarla del sistema o retirar fondos cuando lo desees, según las condiciones del broker.",
   },
   {
     question: "¿Qué nivel de riesgo tienen las estrategias?",
@@ -78,10 +78,10 @@ export default function FAQSection() {
 
     <div className="mt-16 bg-[#18181B] p-8 rounded-xl text-center">
       <h3 className="text-[18px] font-semibold mb-3">¿Aún tienes preguntas?</h3>
-      <p className="text-[14px] text-[#A1A1AA] mb-4">Si necesitás ayuda, nuestro equipo está listo para asistirte.</p>
+      <p className="text-[14px] text-[#A1A1AA] mb-4">Si necesitas ayuda, nuestro equipo está listo para asistirte.</p>
       <a href="https://calendly.com/onlygenius-support/30min">
       <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md font-medium text-[14px] border-none cursor-pointer">
-        Contactanos
+        Contáctanos
       </button>
       </a>
     </div>

@@ -6,7 +6,7 @@ const platforms = [
     icon: "/MT4 Logo mark.png",
     image: "/MT4.png",
     description:
-      "Conectá tu cuenta de MT4 y automatizá tu estrategia usando nuestros algoritmos sin intervención manual.",
+      "Conecta tu cuenta de MT4 y automatiza tu estrategia usando nuestros algoritmos sin intervención manual.",
   },
   {
     name: "MetaTrader 5",
@@ -20,7 +20,7 @@ const platforms = [
     icon: "/cTrader mark.png",
     image: "/cTraderPC.png",
     description:
-      "Operá con cTrader y aprovechá las funcionalidades de trading institucional que ofrecemos.",
+      "Opera con cTrader y aprovecha las funcionalidades de trading institucional que ofrecemos.",
   },
 ];
 
