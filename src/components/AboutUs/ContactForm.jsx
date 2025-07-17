@@ -83,7 +83,7 @@ export default function ContactForm() {
           <div className="flex items-start gap-2 text-sm">
             <input type="checkbox" id="privacy" required className="mt-1" />
             <label htmlFor="privacy">
-              Aceptás nuestra{" "}
+              Aceptas nuestra{" "}
               <a href="#" className="text-blue-500 underline">
                 política de privacidad
               </a>
