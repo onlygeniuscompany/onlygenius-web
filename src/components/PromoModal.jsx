@@ -29,7 +29,7 @@ export default function PromoModal({ open, onClose, openSolicitar }) {
 
           <button
             onClick={() => {
-              // Podés agregar lógica acá
+              // Puedes agregar lógica aquí
               openSolicitar();
               onClose();
             }}

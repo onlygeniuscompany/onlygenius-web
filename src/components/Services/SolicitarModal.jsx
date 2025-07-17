@@ -10,10 +10,10 @@ export default function SolicitarModal({ open, onClose }) {
 
     emailjs
       .sendForm(
-        "service_jz752zq", // reemplazá con tu Service ID
+        "service_jz752zq", // reemplaza con tu Service ID
         "template_p6oqlsh",
         form.current,
-        "ETXgBR_U8k4OCMbYN" // reemplazá con tu Public Key
+        "ETXgBR_U8k4OCMbYN" // reemplaza con tu Public Key
       )
       .then(
         (result) => {
@@ -70,7 +70,7 @@ export default function SolicitarModal({ open, onClose }) {
           <div className="flex items-start gap-2 text-sm">
             <input type="checkbox" id="privacy" required className="mt-1" />
             <label htmlFor="privacy">
-              Aceptás nuestra{" "}
+              Aceptas nuestra{" "}
               <a href="#" className="text-blue-500 underline">
                 política de privacidad
               </a>

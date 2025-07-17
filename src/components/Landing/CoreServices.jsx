@@ -5,7 +5,7 @@ const CoreServices = () => {
 
     return (
         <div className="py-16">
-        <div className="text-center text-[#2563EB] text-[16px] font-semibold leading-[24px]">Core Services</div>
+        <div className="text-center text-[#2563EB] text-[16px] font-semibold leading-[24px]">Servicios principales</div>
         <div className="text-center text-[clamp(28px,5vw,36px)] font-bold leading-[40px] text-[#FAFAFA]">
         Gestión de cuentas totalmente automatizada. Sin complicaciones.
         </div>
@@ -15,7 +15,7 @@ const CoreServices = () => {
         <div className="flex flex-wrap justify-center gap-6 mt-12">
         {[{
             title: "Gestión algorítmica de cuentas",
-            desc: "Gestionamos cuentas en brokers o firmas de prop trading usando nuestros algoritmos propietarios. Totalmente automatizado—no necesitás hacer nada.",
+            desc: "Gestionamos cuentas en brokers o firmas de prop trading usando nuestros algoritmos propietarios. Totalmente automatizado, no necesitas hacer nada.",
             img: "/Bot.png",
         }, {
             title: "Algoritmos exclusivos de alto rendimiento",
@@ -23,7 +23,7 @@ const CoreServices = () => {
             img: "/Data graph 1.png",
         }, {
             title: "Robots de trading personalizados",
-            desc: "¿Ya tenés una estrategia? La convertimos en un robot funcional (MT4, MT5 o cTrader).",
+            desc: "¿Ya tienes una estrategia? La convertimos en un robot funcional (MT4, MT5 o cTrader).",
             img: "/Data graph 1.png",
         }].map(({ title, desc, img }, idx) => (
             <div
