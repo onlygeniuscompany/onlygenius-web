@@ -42,21 +42,21 @@ export default function SolicitarModal({ open, onClose }) {
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <input type="hidden" name="campaign_source" value="solicitar datos" />
           <div className="flex flex-col sm:flex-row gap-2">
-  <input
-    type="text"
-    name="first_name"
-    placeholder="Nombre"
-    required
-    className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
-  />
-  <input
-    type="text"
-    name="last_name"
-    placeholder="Apellido"
-    required
-    className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
-  />
-</div>
+            <input
+              type="text"
+              name="first_name"
+              placeholder="Nombre"
+              required
+              className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
+            />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Apellido"
+              required
+              className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
+            />
+          </div>
 
           <input
             type="email"
@@ -66,6 +66,21 @@ export default function SolicitarModal({ open, onClose }) {
             className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
           />
 
+          <input
+            type="text"
+            name="acuont_number"
+            placeholder="Numero de cuenta"
+            required
+            className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
+          />
+
+          <input
+            type="text"
+            name="reason_request"
+            placeholder="Razon de solicitar"
+            required
+            className="w-full px-4 py-2 rounded-md bg-[#0f0f11] text-white border border-neutral-800"
+          />
          
           <div className="flex items-start gap-2 text-sm">
             <input type="checkbox" id="privacy" required className="mt-1" />
@@ -82,7 +97,7 @@ export default function SolicitarModal({ open, onClose }) {
             type="submit"
             className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition"
           >
-            Enviar mensaje
+            Solicitar
           </button>
         </form>
        </div>
