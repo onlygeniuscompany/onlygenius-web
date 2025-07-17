@@ -65,7 +65,7 @@ const Foot = () =>{
   
         {/* Bottom line */}
         <div className="max-w-[1200px] mx-auto flex justify-between flex-wrap text-[12px] border-t border-[#27272A] pt-6 gap-4">
-          <span>© 2050 ONLYGENIUS. Todos los derechos reservados.</span>
+          <span>© 2025 ONLYGENIUS. Todos los derechos reservados.</span>
           <div className="flex gap-4">
             <a href="/faq">Términos</a>
             <a href="/faq">Cookies</a>
