@@ -1,6 +1,7 @@
 // HeroWithNavbar.jsx
 import React, { useState } from "react";
 import StartModal from "../StartModal";
+import SolicitarModal from "../Services/SolicitarModal";
 
 export default function Hero() {
   const [formOpen, setFormOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Hero() {
         className="max-w-full rounded-[16px]"
       />
     </div>
-      <StartModal open={formOpen} onClose={() => setFormOpen(false)} />
+      <SolicitarModal open={formOpen} onClose={() => setFormOpen(false)} />
     </div>
   );
 }
