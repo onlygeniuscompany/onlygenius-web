@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AlgorithmCard from "./AlgorithmCard";
+import SolicitarModal from "../Services/SolicitarModal";
 // import PerformanceAccessModal from "./PerformanceAccessModal"; // modal previo
 
 export default function AlgorithmsSection() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [redirectWebsite, setRedirectWebsite] = useState(false);
 
   const algorithms = [
     {
@@ -38,6 +40,13 @@ export default function AlgorithmsSection() {
     },
   ];
 
+  useEffect(() => {
+    if(redirectWebsite){
+      window.open("http://demo.dashboard.onlygenius.es", "_blank");
+      setRedirectWebsite(false);
+    }
+  }, [redirectWebsite]);
+
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -56,7 +65,7 @@ export default function AlgorithmsSection() {
         </div>
       </div>
 
-      {/* <PerformanceAccessModal open={modalOpen} onClose={() => setModalOpen(false)} /> */}
+      <SolicitarModal open={modalOpen} onClose={() => setModalOpen(false)} redirect={() => setRedirectWebsite(true)}/>
     </section>
   );
 }

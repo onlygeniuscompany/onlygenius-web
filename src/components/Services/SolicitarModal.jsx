@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function SolicitarModal({ open, onClose }) {
+export default function SolicitarModal({ open, onClose, redirect = null }) {
   const form = useRef();
   if (!open) return null;
 
@@ -20,6 +20,9 @@ export default function SolicitarModal({ open, onClose }) {
           console.log(result.text);
           form.current.reset();
           onClose();
+          if(redirect) {
+            redirect();
+          }
         },
         (error) => {
           console.log(error.text);
