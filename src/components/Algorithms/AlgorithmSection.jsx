@@ -42,7 +42,7 @@ export default function AlgorithmsSection() {
 
   useEffect(() => {
     if(redirectWebsite){
-      window.open("http://demo.dashboard.onlygenius.es", "_blank");
+      window.open("http://demo.dashboard.onlygenius.es/purchase-services", "_blank");
       setRedirectWebsite(false);
     }
   }, [redirectWebsite]);
