@@ -4,10 +4,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useCallback } from "react";
 
 const flags = [
-  "/flags/Steps=Step 1.png",
-  "/flags/Steps=Step 2.png",
-  "/flags/Steps=Step 3.png",
-  "/flags/Steps=Step 4.png",
+  "/flags/flag1.png",
+  "/flags/flag2.png",
+  "/flags/flag3.png",
+  "/flags/flag4.png",
 ];
 
 export default function FlagCarousel() {
