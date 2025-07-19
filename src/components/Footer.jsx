@@ -41,7 +41,6 @@ const Foot = () =>{
                 <a href="/nosotros">Nosotros</a>
                 <a href="/faq">Preguntas frecuentes</a>
                 <a href="/nosotros#contact-form">Contacto</a>
-                <a href="/https://calendly.com/onlygenius-support/30min">Contactar con el soporte</a>
               </div>
             </div>
           </div>
