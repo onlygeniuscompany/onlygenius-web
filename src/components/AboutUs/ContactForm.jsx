@@ -28,7 +28,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="w-full text-white py-20 px-6">
+    <section id="contact-form" className="w-full text-white py-20 px-6">
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-blue-500">Contacto</p>

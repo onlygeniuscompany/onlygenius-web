@@ -30,15 +30,17 @@ const Foot = () =>{
               <h4 className="text-[#FAFAFA] text-[14px] font-semibold mb-3">Empresa</h4>
               <div className="flex flex-col gap-2 text-[14px]">
                 <a href="/services">Servicios</a>
-                <a href="/https://calendly.com/onlygenius-support/30min">Contacto</a>
+                <a href="/algoritmos">Algoritmos</a>
+                <a href="/afiliados">Programa de afiliados</a>
+                <a href="/vps">VPS</a>
               </div>
             </div>
             <div>
               <h4 className="text-[#FAFAFA] text-[14px] font-semibold mb-3">Soporte</h4>
               <div className="flex flex-col gap-2 text-[14px]">
-                <a href="/https://calendly.com/onlygenius-support/30min">Centro de ayuda</a>
-                <a href="/faq">Documentación</a>
+                <a href="/nosotros">Nosotros</a>
                 <a href="/faq">Preguntas frecuentes</a>
+                <a href="/nosotros#contact-form">Contacto</a>
                 <a href="/https://calendly.com/onlygenius-support/30min">Contactar con el soporte</a>
               </div>
             </div>
