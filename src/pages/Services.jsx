@@ -7,7 +7,7 @@ import { VPSSection } from "../components/Landing/VpsService";
 
 export default function Services(){
         const redirectToDashboard = () => {
-                window.location.href = "https://dashboard.onlygenius.es/trading-accounts";
+                window.location.href = "https://demo.dashboard.onlygenius.es/trading-accounts";
         };
         return(
                 <div>
