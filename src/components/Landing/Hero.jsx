@@ -5,6 +5,9 @@ import SolicitarModal from "../Services/SolicitarModal";
 
 export default function Hero() {
   const [formOpen, setFormOpen] = useState(false);
+  const redirectToDashboard = () => {
+    window.location.href = "https://demo.dashboard.onlygenius.es/";
+  };
 
   return (
     <div className="relative text-[#FAFAFA] font-inter w-full overflow-x-hidden min-h-screen">
@@ -35,7 +38,11 @@ export default function Hero() {
         className="max-w-full rounded-[16px]"
       />
     </div>
-      <SolicitarModal open={formOpen} onClose={() => setFormOpen(false)} />
+      <SolicitarModal
+        open={formOpen}
+        onClose={() => setFormOpen(false)}
+        redirect={redirectToDashboard}
+      />
     </div>
   );
 }
