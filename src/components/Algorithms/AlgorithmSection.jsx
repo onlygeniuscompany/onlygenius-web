@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AlgorithmCard from "./AlgorithmCard";
 import SolicitarModal from "../Services/SolicitarModal";
-// import PerformanceAccessModal from "./PerformanceAccessModal"; // modal previo
 
 export default function AlgorithmsSection() {
   const [modalOpen, setModalOpen] = useState(false);

@@ -1,6 +1,5 @@
 // HeroWithNavbar.jsx
 import React, { useState } from "react";
-import StartModal from "../StartModal";
 import SolicitarModal from "../Services/SolicitarModal";
 
 export default function Hero() {
