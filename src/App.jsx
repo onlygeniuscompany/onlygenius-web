@@ -20,7 +20,11 @@ import PromoModal from "./components/PromoModal.jsx";
 import SolicitarModal from "./components/Services/SolicitarModal";
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [solicitarOpen,setSolicitarOpen] = useState(false)
+  const [solicitarOpen, setSolicitarOpen] = useState(false);
+
+  const redirectToDashboard = () => {
+    window.location.href = "https://demo.dashboard.onlygenius.es/";
+  };
 
   useEffect(() => {
     const alreadyShown = sessionStorage.getItem("promoModalShown");
@@ -34,7 +38,11 @@ function App() {
     <Router>
 
       <Layout>
-        <SolicitarModal open={solicitarOpen} onClose={()=>setSolicitarOpen(false)}/>
+        <SolicitarModal
+          open={solicitarOpen}
+          onClose={() => setSolicitarOpen(false)}
+          redirect={redirectToDashboard}
+        />
       <PromoModal open={modalOpen} onClose={() => setModalOpen(false)} openSolicitar={()=> setSolicitarOpen(true)} />
 
       <Routes>
