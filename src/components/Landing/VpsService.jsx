@@ -49,9 +49,11 @@ export function VPSSection() {
             ))}
           </ul>
 
-          <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-            Solicitar VPS →
-          </button>
+        <a href="https://vps.onlygenius.es/">
+            <button className="mt-8 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+              Solicitar VPS →
+            </button>
+          </a>
         </div>
       </div>
     </section>
