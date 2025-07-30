@@ -12,7 +12,9 @@ export default function AboutSection() {
         Potenciamos a traders con automatización<br /> Inteligencia + escalabilidad.
         </h2>
         <p className="text-base text-gray-300 leading-relaxed">
-          En OnlyGenius, creemos en hacer que el trading inteligente sea accesible para todos — desde traders minoristas que recién comienzan hasta profesionales con cuentas fondeadas en prop firms. Nuestra misión es simple: darte acceso a algoritmos de trading de última generación, desarrollados internamente, que trabajen para ti las 24 horas.
+          OnlyGenius es una empresa especializada en trading algorítmico, que comercializa un conjunto de tres algoritmos de alto valor ("high ticket") que operan de forma simultánea y completamente automatizada. Colabora tanto con inversores minoristas como con empresas que facturan hasta 23 millones de euros.
+          <br />Los inversores delegan la gestión en nuestros algoritmos, diversificando parte de su capital personal o empresarial en sistemas auditados, con un sólido historial de rendimiento. Estas estrategias han sido desarrolladas y optimizadas por traders cuantitativos, especialistas en trading algorítmico y profesionales del sector financiero.
+          <br />Además, OnlyGenius, junto a su equipo de más de diez programadores, ofrece un servicio integral de automatización de estrategias, transformando sistemas manuales en algoritmos personalizados, adaptados a cualquier tipo de cliente.
         </p>
       </div>
     </section>
