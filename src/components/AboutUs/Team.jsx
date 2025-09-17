@@ -11,7 +11,7 @@ const team = [
   },
   {
     name: "Ivan Serralta",
-    role: "IT",
+    role: "IT - PM",
     description: "Desarrollador en OnlyGenius.",
     image: "/ivan.jpeg",
     color: "text-blue-500",
@@ -52,19 +52,45 @@ const team = [
   //   color: "text-blue-500",
   // },
   {
-    name: "",
+    name: "Jonathan",
     role: "IT",
     description: "Desarrollador en OnlyGenius.",
     image: "/Imagen2.jpg",
     color: "text-blue-500",
-  },
-  {
-    name: "Franco Cruz",
+  },{
+    name: "Pedro Gandola",
     role: "IT",
     description: "Desarrollador en OnlyGenius.",
-    image: "/franco.jpg",
+    image: "/IMG_7621 (1).jpg",
     color: "text-blue-500",
   },
+  {
+    name: "Nabeel",
+    role: "IT",
+    description: "Desarrollador en OnlyGenius.",
+    image: "/image (2) 1.png",
+    color: "text-blue-500",
+  },
+  {
+    name: "Marcel",
+    role: "Marketing",
+    description: "Videomaker en OnlyGenius.",
+    image: "/IMG_7624 (1).jpg",
+    color: "text-blue-500",
+  },
+  {
+    name: "Ezequiel",
+    role: "Marketing",
+    description: "Ads y growth specialist en OnlyGenius.",
+    image: "/IMG_7629 (1).png",
+    color: "text-blue-500",
+  },{
+  name: "Carl",
+  role: "Quantitative trader",
+  description: "Especialista en trading algorítmico en OnlyGenius.",
+  image: "/IMG_7627 (1).png",
+  color: "text-blue-500",
+}
 ];
 
 export default function TeamSection() {
