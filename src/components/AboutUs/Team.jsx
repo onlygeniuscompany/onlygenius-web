@@ -88,7 +88,7 @@ const team = [
   name: "Carl",
   role: "Quantitative trader",
   description: "Especialista en trading algorítmico en OnlyGenius.",
-  image: "/IMG_7627 (1).png",
+  image: "/IMG_7627 (1).jpg",
   color: "text-blue-500",
 }
 ];
