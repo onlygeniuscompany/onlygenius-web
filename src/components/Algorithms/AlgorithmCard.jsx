@@ -7,9 +7,11 @@ export default function AlgorithmCard({
   avgReturn,
   drawdown,
   sharpe,
+  sortino,
   winRate,
+  tradeDuration,
   onRequestAccess,
-  img
+  img,
 }) {
   return (
     <div className="rounded-xl p-6 flex flex-col gap-4 border border-[#2a2a2a]">
@@ -17,7 +19,7 @@ export default function AlgorithmCard({
       <div className="flex justify-between items-start">
         <h3 className="text-white text-lg font-semibold">{name}</h3>
         <span
-          className='text-xs font-medium px-2 py-0.5 rounded-full text-white ${riskColor}'
+          className={`text-xs font-medium px-2 py-0.5 rounded-full text-white ${riskColor}`}
         >
           {riskLevel}
         </span>
@@ -25,8 +27,7 @@ export default function AlgorithmCard({
 
       {/* Video Placeholder */}
       <div className="bg-[#1a1a1a] h-[160px] rounded-lg flex items-center justify-center text-white/30">
-        <img src={img}/>
-
+        <img src={img} />
       </div>
 
       {/* Stats */}
@@ -44,8 +45,16 @@ export default function AlgorithmCard({
           <p className="font-semibold">{sharpe}</p>
         </div>
         <div>
+          <p className="text-white/60">Ratio sortino</p>
+          <p className="font-semibold">{sortino}</p>
+        </div>
+        <div>
           <p className="text-white/60">Winrate</p>
           <p className="font-semibold">{winRate}</p>
+        </div>
+        <div>
+          <p className="text-white/60">Duración media trades</p>
+          <p className="font-semibold">{tradeDuration}</p>
         </div>
       </div>
 
