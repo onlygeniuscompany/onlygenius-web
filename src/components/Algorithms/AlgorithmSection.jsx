@@ -12,11 +12,13 @@ export default function AlgorithmsSection() {
       name: "OnlyBlackBox",
       riskLevel: "Riesgo alto",
       riskColor: "bg-red-700",
-      avgReturn: "20.05%",
+      avgReturn: "13.58%",
       drawdown: "-9.75%",
-      sharpe: "1.4",
-      winRate: "38.88%",
-      img:'onlyblackbox.png'
+      sharpe: "1.41",
+      sortino: "5.31",
+      winRate: "39%",
+      tradeDuration: "11h 30min",
+      img: "onlyblackbox.png",
     },
     {
       name: "OnlySystem",
@@ -24,24 +26,28 @@ export default function AlgorithmsSection() {
       riskColor: "bg-yellow-600",
       avgReturn: "17.9%",
       drawdown: "-8.8%",
-      sharpe: "1.39",
-      winRate: "41.07%",
-      img:'onlysystem.jpg'
+      sharpe: "1.29",
+      sortino: "3.24",
+      winRate: "40%",
+      tradeDuration: "6h 40min",
+      img: "onlysystem.jpg",
     },
     {
       name: "OnlyHedge",
       riskLevel: "Riesgo bajo",
       riskColor: "bg-green-700",
-      avgReturn: "15.25%",
-      drawdown: "-2.26%",
-      sharpe: "1.87",
-      winRate: "53.33%",
-      img:'onlyhedge.png'
+      avgReturn: "28.46%",
+      drawdown: "-12.2%",
+      sharpe: "1.51",
+      sortino: "3.4",
+      winRate: "53%",
+      tradeDuration: "43.7 min",
+      img: "onlyhedge.png",
     },
   ];
 
   useEffect(() => {
-    if(redirectWebsite){
+    if (redirectWebsite) {
       window.open("http://demo.dashboard.onlygenius.es/purchase-services", "_blank");
       setRedirectWebsite(false);
     }
@@ -65,7 +71,7 @@ export default function AlgorithmsSection() {
         </div>
       </div>
 
-      <SolicitarModal open={modalOpen} onClose={() => setModalOpen(false)} redirect={() => setRedirectWebsite(true)}/>
+      <SolicitarModal open={modalOpen} onClose={() => setModalOpen(false)} redirect={() => setRedirectWebsite(true)} />
     </section>
   );
 }
