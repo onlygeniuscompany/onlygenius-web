@@ -8,7 +8,7 @@ export default function PartnersSection() {
         <div className="flex flex-wrap justify-center items-center gap-10">
         
           <img
-            src="/Dashprop logo.png"
+            src="/Logo Dashprop.svg"
             alt="Partner 1"
             className="h-15 object-contain "
           />
