@@ -33,6 +33,7 @@ const Foot = () =>{
                 <a href="/algoritmos">Algoritmos</a>
                 <a href="/afiliados">Programa de afiliados</a>
                 <a href="/vps">VPS</a>
+                <a href="https://hub.onlygenius.es/" target="_blank">Nuestro Ecosistema</a>
               </div>
             </div>
             <div>
