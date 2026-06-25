@@ -23,7 +23,7 @@ function App() {
   const [solicitarOpen, setSolicitarOpen] = useState(false);
 
   const redirectToDashboard = () => {
-    window.location.href = "https://demo.dashboard.onlygenius.es/";
+    window.location.href = "https://dashboard.onlygenius.es/login";
   };
 
   useEffect(() => {

@@ -48,7 +48,7 @@ export default function AlgorithmsSection() {
 
   useEffect(() => {
     if (redirectWebsite) {
-      window.open("http://demo.dashboard.onlygenius.es/purchase-services", "_blank");
+      window.open("http://dashboard.onlygenius.es/purchase-services", "_blank");
       setRedirectWebsite(false);
     }
   }, [redirectWebsite]);
@@ -58,20 +58,31 @@ export default function AlgorithmsSection() {
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center">
           <h3 className="text-blue-500 text-sm font-medium">Algoritmos</h3>
-          <h2 className="text-3xl font-bold text-white mt-2">Nuestros algoritmos</h2>
+          <h2 className="text-3xl font-bold text-white mt-2">
+            Nuestros algoritmos
+          </h2>
           <p className="text-white/70 mt-2 max-w-xl mx-auto">
-            Explore nuestros algoritmos comerciales probados, diseñados para ofrecer resultados consistentes en diversas condiciones del mercado.
+            Explore nuestros algoritmos comerciales probados, diseñados para
+            ofrecer resultados consistentes en diversas condiciones del mercado.
           </p>
         </div>
 
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {algorithms.map((algo, i) => (
-            <AlgorithmCard key={i} {...algo} onRequestAccess={() => setModalOpen(true)} />
+            <AlgorithmCard
+              key={i}
+              {...algo}
+              onRequestAccess={() => setModalOpen(true)}
+            />
           ))}
         </div>
       </div>
 
-      <SolicitarModal open={modalOpen} onClose={() => setModalOpen(false)} redirect={() => setRedirectWebsite(true)} />
+      <SolicitarModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        redirect={() => setRedirectWebsite(true)}
+      />
     </section>
   );
 }
