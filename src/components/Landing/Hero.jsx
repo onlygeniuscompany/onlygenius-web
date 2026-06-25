@@ -6,7 +6,7 @@ import SolicitarModal from "../Services/SolicitarModal";
 export default function Hero() {
   const [formOpen, setFormOpen] = useState(false);
   const redirectToDashboard = () => {
-    window.location.href = "https://demo.dashboard.onlygenius.es/";
+    window.location.href = "https://dashboard.onlygenius.es/";
   };
 
   return (
